@@ -1,0 +1,50 @@
+.aside-left #sidenav li.active,.aside-left #setup-menu li.active,.aside-left #sidenav.nav > li:hover,.aside-left #sidenav.nav > li:focus,.aside-left #setup-menu > li:hover,.aside-left #setup-menu > li:focus{
+    background:none!important;
+}
+.aside-left .welcome_user_text_color{
+    color:#fff!important;
+}
+.aside-left #sidenav i {
+  position: relative;
+  color: #e6e6e6;
+  display: inline-block;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  line-height: 24px;
+  box-sizing: border-box;
+}
+.aside-left #sidenav i:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+.aside-left #sidenav i:before {
+  color: #fff;
+}
+.aside-left #sidenav i:before,
+.aside-left #sidenav i:after {
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.aside-left #sidenav li:hover i{
+}
+.aside-left #sidenav li:hover i:after,
+.aside-left #sidenav li:active i:after,
+.aside-left #sidenav li.hover i:after {
+  border-color: transparent #039be5;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.aside-left #sidenav .subheader .logout i{
+    line-height: 0px!important;
+    padding: 17px 27px 17px 7px;
+}

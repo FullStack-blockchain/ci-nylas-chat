@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Synchronizing with macOS &mdash; Nextcloud 13 User Manual 13 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '13',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Nextcloud 13 User Manual 13 documentation" href="../contents.html" />
+    <link rel="up" title="Contacts &amp; calendar" href="index.html" />
+    <link rel="next" title="Thunderbird - synchronize addressbook and calendar" href="sync_thunderbird.html" />
+    <link rel="prev" title="iOS - synchronize iPhone/iPad" href="sync_ios.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1d2d44">
+
+  </head>
+  <body role="document">
+
+
+<div class="wrap container not-front">
+  <div class="content row">
+  <main class="main">
+    
+			<div class="row">
+				<div class="col-md-3">
+					<div class="sidebar">
+            <h1>Nextcloud 13 User Manual</h1>
+            
+            <div class="sidebar-search">
+              <form class="headersearch" action="../search.html" method="get">
+                <input type="text" value="" name="q" id="q" class="form-control" /> 
+                <button  class="btn btn-default" type="submit" id="searchsubmit">Search</button>
+              </form>
+            </div>
+            
+							<div class="menu-support-container">
+								<ul id="menu-support" class="menu">
+									<ul>
+                    <li><a href="../contents.html">Table of Contents</a></li>
+									</ul>
+                  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Nextcloud 13 user manual introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../whats_new.html">What&#8217;s new for users in Nextcloud 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../webinterface.html">The Nextcloud Web interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/index.html">Files &amp; synchronization</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Contacts &amp; calendar</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="contacts.html">Using the contacts app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calendar.html">Using the calendar app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sync_android.html">Synchronize Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sync_ios.html">iOS - synchronize iPhone/iPad</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Synchronizing with macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sync_thunderbird.html">Thunderbird - synchronize addressbook and calendar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sync_kde.html">Synchronizing with KDE PIM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../userpreferences.html">Setting your preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_2fa.html">Using two-factor authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session_management.html">Manage connected browsers and devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../external_storage/index.html">External Storage</a></li>
+</ul>
+
+								</ul>
+							</div>
+					</div>
+				</div>
+        
+
+				<div class="col-md-9">
+					<div class="page-content">
+            
+<ul class="prevnext-title list-unstyled list-inline">
+  <li class="prev">
+    <a href="sync_ios.html" title="Previous Chapter: iOS - synchronize iPhone/iPad"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; iOS - synchronize iPhone/iPad</span>
+    </a>
+  </li>
+  <li class="next">
+    <a href="sync_thunderbird.html" title="Next Chapter: Thunderbird - synchronize addressbook and calendar"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Thunderbird - synchronize addressbook and calendar &raquo;</span>
+    </a>
+  </li>
+</ul>
+						
+  <div class="section" id="synchronizing-with-macos">
+<h1>Synchronizing with macOS<a class="headerlink" href="#synchronizing-with-macos" title="Permalink to this headline">¶</a></h1>
+<p>With Nextcloud 14 and its CalDAV-backend, syncing your Calendars with your macOS-device is easy.</p>
+<p>To use Nextcloud with macOS Calendar you will need to use the following steps:</p>
+<ol class="arabic simple">
+<li>Open the Calendar-app in your Nextcloud (<a class="reference external" href="https://cloud.example.com/apps/calendar">https://cloud.example.com/apps/calendar</a>)</li>
+<li>Navigate into the app-settings (lower left corner) and copy the iOS/macOS CalDAV adress provided there</li>
+<li>Open the system prefrenences of your macOS-device</li>
+<li>Navigate to &#8220;Online-Accounts&#8221;</li>
+<li>Click on &#8220;Add another account...&#8221; and click on &#8220;CalDAV-Account&#8221;</li>
+<li>Select &#8220;Manually&#8221; as Account-Type and type in your username or email-adress of your Nextcloud-instance as username, and your app-password/token or password as password.</li>
+<li>Paste the previous copied (step 2) iOS/macOS CalDAV adress into the server adress field and click on &#8220;Login&#8221;.</li>
+</ol>
+<p>You can now select, with which applications you want to use this CalDAV resource. In the most cases, this will be &#8220;Calendar&#8221;, sometimes you may also want to use it for your Tasks and reminders.</p>
+</div>
+
+
+            
+<ul class="prevnext-title list-unstyled list-inline">
+  <li class="prev">
+    <a href="sync_ios.html" title="Previous Chapter: iOS - synchronize iPhone/iPad"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; iOS - synchronize iPhone/iPad</span>
+    </a>
+  </li>
+  <li class="next">
+    <a href="sync_thunderbird.html" title="Next Chapter: Thunderbird - synchronize addressbook and calendar"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">Thunderbird - synchronize addressbook and calendar &raquo;</span>
+    </a>
+  </li>
+</ul>
+					</div>
+				</div>
+			</div>
+  </main>  
+  </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2018-06-15 04:16:51 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) /var/www/vhosts/bufulo.com/sandbox.bufulo.com/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2018-06-15 04:16:51 --> Unable to connect to the database
+ERROR - 2018-06-15 04:18:24 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:18:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:24 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:18:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:24 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:25 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:28 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:18:29 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/css
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:43 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:19:44 --> 404 Page Not Found: Assets/plugins
+ERROR - 2018-06-15 04:26:40 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 04:29:04 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 04:29:47 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 04:30:05 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:11:11 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:11:29 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:12:05 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:12:44 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:14:24 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:15:15 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:15:37 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:17:16 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:18:23 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:21:59 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:22:33 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:22:47 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:22:56 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 05:23:09 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:16:13 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:16:29 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:17:13 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:17:35 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:18:03 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:18:48 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:22:04 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:22:36 --> 404 Page Not Found: Assets-old/plugins
+ERROR - 2018-06-15 08:23:57 --> 404 Page Not Found: Assets-old/plugins

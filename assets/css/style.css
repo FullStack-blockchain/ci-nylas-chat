@@ -1,0 +1,116 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -moz-animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { 
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% { 
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loader
+{
+    position:absolute;
+    left:50%; 
+    top:50%;
+    margin-left:-60px; /*image width/2 */
+    margin-top:-60px; /*image height/2 */
+    z-index: 10000;
+    display: none;
+}
+
+.width-10p{
+	width: 10%;
+}
+
+.width-25p{
+	width: 25%;
+}
+.width-30p{
+	width: 30%;
+}
+
+@media only screen and (max-width: 1470px) {
+ 	.width-10p,
+ 	.width-25p,
+ 	.width-30p{
+ 		width: 100%;
+ 	}
+}
+
+
+.actionBar{
+    display: none;
+}
+
+.actionBarClone{
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.width-90p .modal-dialog{
+  width: 90%;
+}
+
+
+.canvasser-label-icon{
+  width: 42px;
+  margin-top: 0;
+  height: 20px;
+  font-size: 11px;
+}
+
+.canvasser-input{
+  height: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.canvasser-input-col-div{
+  margin-bottom: 2px;
+}
+
+.net_total{
+  min-width: 45px;
+  display: block;
+}
+
+.navbar #preview{
+  height: 100%;
+}
+
+.navbar img#company_logo{
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}

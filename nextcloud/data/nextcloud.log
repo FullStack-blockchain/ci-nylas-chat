@@ -1,0 +1,1 @@
+{"reqId":"IbvXuTzCzm54V8JzXKHA","level":2,"time":"2018-07-30T12:20:48+00:00","remoteAddr":"103.41.26.233","user":"--","app":"core","method":"POST","url":"\/nextcloud\/index.php\/login","message":"Login failed: 'admin' (Remote IP: '103.41.26.233')","userAgent":"Mozilla\/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko\/20100101 Firefox\/61.0","version":"13.0.5.2"}

@@ -1,0 +1,80 @@
+#project-dashboard .page-header {
+    height: auto !important;
+    min-height: 16rem;
+    max-height: 20rem;
+}
+#project-dashboard .page-content {
+    height: calc(100vh - 16rem - 64px);
+    background-color: #4e4e4e;
+}
+
+#project-dashboard .page-content .content{
+    height: 100%;
+}
+
+.homepage_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage_button .button_link {
+    position: relative;
+    top: 30px;
+}
+
+.homepage_button i.btn-icon {
+    background-color: transparent;
+    font-size: 4rem;
+    color: #ffffff;
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.homepage_button i.btn-icon {
+    position: relative;
+    color: #e6e6e6;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+.homepage_button i.btn-icon:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #e6e6e6;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+}
+.homepage_button i.btn-icon:before {
+    color: #fff;
+}
+.homepage_button i.btn-icon:before,
+.homepage_button i.btn-icon:after {
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+
+.homepage_button i.btn-icon:hover:after {
+    border-color: transparent #800000;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+@media (max-width: 414px) {
+    #project-dashboard .page-content {
+        height: auto;
+        padding: 70px 20px;
+    }
+}

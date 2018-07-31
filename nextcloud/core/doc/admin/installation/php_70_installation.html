@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installing PHP 7.0 on RHEL 7 and CentOS 7 &mdash; Nextcloud 13 Administration Manual 13 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '13',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Nextcloud 13 Administration Manual 13 documentation" href="../contents.html" />
+    <link rel="up" title="Installation" href="index.html" />
+    <link rel="next" title="SELinux configuration" href="selinux_configuration.html" />
+    <link rel="prev" title="Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7" href="php_56_installation.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1d2d44">
+
+  </head>
+  <body role="document">
+
+
+<div class="wrap container not-front">
+  <div class="content row">
+  <main class="main">
+    
+			<div class="row">
+				<div class="col-md-3">
+					<div class="sidebar">
+            <h1>Nextcloud 13 Administration Manual</h1>
+            
+            <div class="sidebar-search">
+              <form class="headersearch" action="../search.html" method="get">
+                <input type="text" value="" name="q" id="q" class="form-control" /> 
+                <button  class="btn btn-default" type="submit" id="searchsubmit">Search</button>
+              </form>
+            </div>
+            
+							<div class="menu-support-container">
+								<ul id="menu-support" class="menu">
+									<ul>
+                    <li><a href="../contents.html">Table of Contents</a></li>
+									</ul>
+                  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes.html">Release notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="system_requirements.html">System requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment_recommendations.html">Deployment recommendations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_installation.html">Installation on Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation_wizard.html">Installation wizard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command_line_installation.html">Installing from command line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps_management_installation.html">Installing and managing apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps_supported.html">Supported apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="php_56_installation.html">Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Installing PHP 7.0 on RHEL 7 and CentOS 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rhel-7-upgrade-to-php-7-0">RHEL 7 Upgrade to PHP 7.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#centos-7-upgrade-to-php-7-0">CentOS 7 Upgrade to PHP 7.0</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="selinux_configuration.html">SELinux configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nginx.html">Nginx configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration_server/index.html">Server configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration_user/index.html">User management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration_files/index.html">File sharing and management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file_workflows/index.html">File workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration_database/index.html">Database configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration_mimetypes/index.html">Mimetypes management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../maintenance/index.html">Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues/index.html">Issues and troubleshooting</a></li>
+</ul>
+
+								</ul>
+							</div>
+					</div>
+				</div>
+        
+
+				<div class="col-md-9">
+					<div class="page-content">
+            
+<ul class="prevnext-title list-unstyled list-inline">
+  <li class="prev">
+    <a href="php_56_installation.html" title="Previous Chapter: Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7</span>
+    </a>
+  </li>
+  <li class="next">
+    <a href="selinux_configuration.html" title="Next Chapter: SELinux configuration"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">SELinux configuration &raquo;</span>
+    </a>
+  </li>
+</ul>
+						
+  <div class="section" id="installing-php-7-0-on-rhel-7-and-centos-7">
+<h1>Installing PHP 7.0 on RHEL 7 and CentOS 7<a class="headerlink" href="#installing-php-7-0-on-rhel-7-and-centos-7" title="Permalink to this headline">¶</a></h1>
+<p>PHP 5.4 has been end-of-life since September 2015 and is no longer supported by the PHP team. RHEL 7 still ships with PHP 5.4, and Red Hat supports it. Nextcloud 11+ requires PHP 5.6 or better, so upgrading to 5.6 is required. For more information see <a class="reference internal" href="php_56_installation.html#label-php56installation"><span>Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7</span></a>. However, it is highly recommended to upgrade to PHP 7.0+ for best security and performance.</p>
+<p><strong>Before upgrading, evaluate all of your PHP apps for compatibility with PHP 7.0.</strong></p>
+<div class="section" id="rhel-7-upgrade-to-php-7-0">
+<h2>RHEL 7 Upgrade to PHP 7.0<a class="headerlink" href="#rhel-7-upgrade-to-php-7-0" title="Permalink to this headline">¶</a></h2>
+<p>To upgrade to PHP 7.0, you must use the Software Collections (SCL) repository to be in compliance with your RHEL support contract, and not any other third-party repository. Follow these steps to install PHP 7.0 from SCL. First you must use your Subscription Manager to enable SCL:</p>
+<div class="highlight-python"><div class="highlight"><pre>subscription-manager repos --enable rhel-server-rhscl-7-eus-rpms
+</pre></div>
+</div>
+<p>Then install PHP 7.0 and these modules:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70 rh-php70-php rh-php70-php-gd rh-php70-php-mbstring
+</pre></div>
+</div>
+<p>You must also install the updated database module for your database. This installs the new PHP 7.0 module for MySQL/MariaDB:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70-php-mysqlnd
+</pre></div>
+</div>
+<p>If you are using the Nextcloud LDAP app, you need this module:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70-php-ldap
+</pre></div>
+</div>
+<p>Disable loading the old PHP Apache modules by changing their names:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mv</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">conf</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">php54</span><span class="o">.</span><span class="n">off</span>
+<span class="n">mv</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">php</span><span class="o">.</span><span class="n">conf</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">php54</span><span class="o">.</span><span class="n">off</span>
+</pre></div>
+</div>
+<p>Symlink the PHP 7.0 Apache modules into place:</p>
+<div class="highlight-python"><div class="highlight"><pre>ln -s /opt/rh/httpd24/root/etc/httpd/conf.d/rh-php70-php.conf /etc/httpd/conf.d/
+ln -s /opt/rh/httpd24/root/etc/httpd/conf.modules.d/15-rh-php70-php.conf /etc/httpd/conf.modules.d/
+ln -s /opt/rh/httpd24/root/etc/httpd/modules/librh-php70-php7.so /etc/httpd/modules/
+</pre></div>
+</div>
+<p>Then restart Apache:</p>
+<div class="highlight-python"><div class="highlight"><pre>service httpd restart
+</pre></div>
+</div>
+<p>Verify with <code class="docutils literal"><span class="pre">phpinfo</span></code> that your Apache server is using PHP 7.0 and loading the
+correct modules; see <a class="reference internal" href="../issues/general_troubleshooting.html#label-phpinfo"><span>PHP version and information</span></a> to learn how to use phpinfo.</p>
+</div>
+<div class="section" id="centos-7-upgrade-to-php-7-0">
+<h2>CentOS 7 Upgrade to PHP 7.0<a class="headerlink" href="#centos-7-upgrade-to-php-7-0" title="Permalink to this headline">¶</a></h2>
+<p>To upgrade to PHP 7.0, use the Red Hat Software Collections (SCL) repository.</p>
+<p><strong>Before upgrading, evaluate all of your PHP apps for compatibility with PHP 7.0.</strong></p>
+<p>Follow these steps to install PHP 7.0 from SCL. First install the SCL repository:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install centos-release-scl
+</pre></div>
+</div>
+<p>Then install PHP 7.0 and these modules:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70 rh-php70-php rh-php70-php-gd rh-php70-php-mbstring
+</pre></div>
+</div>
+<p>You must also install the updated database module for your database. This installs the new PHP 7.0 module for MySQL/MariaDB:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70-php-mysqlnd
+</pre></div>
+</div>
+<p>If you are using the Nextcloud LDAP app, you need this module:</p>
+<div class="highlight-python"><div class="highlight"><pre>yum install rh-php70-php-ldap
+</pre></div>
+</div>
+<p>Disable loading the old PHP Apache modules by changing their names:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">mv</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">php</span><span class="o">.</span><span class="n">conf</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">php54</span><span class="o">.</span><span class="n">off</span>
+<span class="n">mv</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">php</span><span class="o">.</span><span class="n">conf</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">httpd</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">modules</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="mi">10</span><span class="o">-</span><span class="n">php54</span><span class="o">.</span><span class="n">off</span>
+</pre></div>
+</div>
+<p>Symlink the PHP 7.0 Apache modules into place:</p>
+<div class="highlight-python"><div class="highlight"><pre>ln -s /opt/rh/httpd24/root/etc/httpd/conf.d/rh-php70-php.conf /etc/httpd/conf.d/
+ln -s /opt/rh/httpd24/root/etc/httpd/conf.modules.d/15-rh-php70-php.conf /etc/httpd/conf.modules.d/
+ln -s /opt/rh/httpd24/root/etc/httpd/modules/librh-php70-php7.so /etc/httpd/modules/
+</pre></div>
+</div>
+<p>Then restart Apache:</p>
+<div class="highlight-python"><div class="highlight"><pre>service httpd restart
+</pre></div>
+</div>
+<p>Verify with <code class="docutils literal"><span class="pre">phpinfo</span></code> that your Apache server is using PHP 7.0 and loading the
+correct modules; see <a class="reference internal" href="../issues/general_troubleshooting.html#label-phpinfo"><span>PHP version and information</span></a> to learn how to use <code class="docutils literal"><span class="pre">phpinfo</span></code>.</p>
+</div>
+</div>
+
+
+            
+<ul class="prevnext-title list-unstyled list-inline">
+  <li class="prev">
+    <a href="php_56_installation.html" title="Previous Chapter: Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; Installing PHP 5.6 on RHEL 6/7 and CentOS 6/7</span>
+    </a>
+  </li>
+  <li class="next">
+    <a href="selinux_configuration.html" title="Next Chapter: SELinux configuration"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">SELinux configuration &raquo;</span>
+    </a>
+  </li>
+</ul>
+					</div>
+				</div>
+			</div>
+  </main>  
+  </div>
+</div>
+  </body>
+</html>

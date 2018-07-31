@@ -1,0 +1,21 @@
+<div id="aww-wrapper"></div>
+<script src="https://awwapp.com/static/widget/js/aww.min.js">
+</script>
+<script type="text/javascript">
+      var aww = new AwwBoard('#aww-wrapper', {
+            apiKey: '391e33ce-16fb-41e9-aced-ad424988deba',
+            autoJoin: true,
+            boardLink: '5aj5342-56tz-uhjk-9874',
+            sizes: [3, 5, 8, 13, 20],
+            fontSizes: [10, 12, 16, 22, 30],
+            menuOrder: ['colors', 'sizes', 'tools', 'admin',
+              'utils'],
+            tools: ['pencil', 'eraser', 'text', 'image'],
+            colors: [ "#000000", "#f44336", "#4caf50", "#2196f3",
+              "#ffc107", "#9c27b0",     "#e91e63", "#795548"],
+            defaultColor: "#000000",
+            defaultSize: 8,
+            defaultTool: 'pencil',
+     });
+	 aww.doDrawLine('green', 10, 50, 50, 600, 600);
+</script>

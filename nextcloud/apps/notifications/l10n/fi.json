@@ -1,0 +1,9 @@
+{ "translations": {
+    "Admin notifications" : "Ylläpitoilmoitukset",
+    "Notifications" : "Ilmoitukset",
+    "Failed to perform action" : "Toimenpiteen suorittaminen epäonnistui",
+    "in {path}" : "polussa {path}",
+    "No notifications" : "Ei ilmoituksia",
+    "Dismiss" : "Hylkää"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

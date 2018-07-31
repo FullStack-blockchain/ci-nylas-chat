@@ -1,0 +1,74 @@
+#contacts-manage .page-header {height: auto;min-height: 7.6rem;}
+#contacts-manage button.dropdown-toggle::after{display: none;}
+#contacts-manage .dropdown-menu{margin: 1px 0;padding: 0}
+#contacts-manage .dropdown-menu li{border-top:1px solid rgba(0,0,0,0.12);}
+#contacts-manage .dropdown-menu>.active>a, #contacts-manage .dropdown-menu>.active>a:focus, #contacts-manage .dropdown-menu>.active>a:hover {color: #fff;text-decoration: none;background-color: #2196F3;outline: 0;}
+#contacts-manage .dropdown-menu>li>a {display: block;padding: 10px 20px;clear: both;font-weight: 400;line-height: 1.42857143;color: #333;white-space: nowrap;}
+#contacts-manage .dropdown-menu > li.dropdown-submenu {position: relative;}
+#contacts-manage .dropdown-menu > li.dropdown-submenu:after {position: absolute;top: 13px;right: 10px;content: "";margin-left: .255em;vertical-align: .255em;border-top: 0.35em solid transparent;border-right: 0;border-bottom: 0.35em solid transparent;border-left: .35em solid;}
+#contacts-manage .dropdown-menu > li.dropdown-submenu>.dropdown-menu {top: 0;left: -100%;width: 100%;margin: 0;border-radius: 0 6px 6px 6px;max-height: 500px;overflow-y: auto;}
+#contacts-manage .dropdown-menu > li.dropdown-submenu:hover > .dropdown-menu {display: block;}
+
+#contacts-manage .hr-panel-heading {margin: 20px -15px;}
+#contacts-manage .fuse-widget-front {display: flex;flex-direction: column;flex: 1 1 auto;position: relative;overflow: hidden;visibility: visible;width: 100%;opacity: 1;z-index: 10;border-radius: 2px;transition: visibility 0s ease-in .2s,opacity 0s ease-in .2s,-webkit-transform .5s ease-out 0s;transition: transform .5s ease-out 0s,visibility 0s ease-in .2s,opacity 0s ease-in .2s;transition: transform .5s ease-out 0s,visibility 0s ease-in .2s,opacity 0s ease-in .2s,-webkit-transform .5s ease-out 0s;-webkit-transform: rotateY(0);transform: rotateY(0);-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+#contacts-manage .fuse-widget-front .h3{font-size: 16px;}
+#contacts-manage .mat-white-bg {background-color: #fff!important;color: rgba(0,0,0,.87)!important;}
+.mat-elevation-z2 {box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);}
+.mat-white-bg .secondary-text, .mat-white-bg.secondary-text {color: rgba(0,0,0,.54)!important;}
+.font-weight-500 {font-weight: 500;}
+
+
+/*Customer Profile or Client Add and View*/
+#customer-profile .page-header {height: auto;min-height: 7.6rem;}
+#customer-profile .page-content .customer-tabs{}
+#customer-profile .page-content .customer-tabs>li+li{margin-top: unset;}
+#customer-profile .page-content .customer-tabs li{width: 100%;border-bottom: 1px solid #ddd;}
+#customer-profile .page-content .customer-tabs li a{width: 100%;color: #333333;border-radius: unset;}
+#customer-profile .page-content .customer-tabs li a i.fa{line-height: 22px;}
+#customer-profile .page-content .customer-tabs li.active a{color: #008ece;border-left: none;border-right: none;border-radius: unset;}
+#customer-profile .page-content .customer-tabs li.active i{color: #008ece;}
+
+#customer-profile .page-content .customer-profile-group-heading{padding: 10px 15px;color: #666;background: #f9fafc;border-top-left-radius: 4px;border-top-right-radius: 4px;border-bottom: 1px solid #e4e5e7;font-size: 18px;margin: 0;}
+#customer-profile .page-content .horizontal-scrollable-tabs{margin: auto -16px;}
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs{margin-bottom: 5px;border-bottom: 1px solid #e4e5e7;}
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li>a{border: none;color: #333333;}
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li.active>a,
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li>a:focus,
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li>a:hover{border: none;background: none;color: #008ece;}
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li.active>a:after,
+#customer-profile .page-content .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs>li>a:hover:after{content: '';position: absolute;width: 100%;left: 0;right: 0;bottom: 0;height: 3px;background-color: #008ece;color: #008ece;}
+
+#customer-profile .page-content .input-group-select .dropdown-toggle::after{display: none;}
+#customer-profile .page-content .input-group-select::after{content: '';display: block;clear: both;}
+#customer-profile .page-content .input-group-select .bootstrap-select._select_input_group{float: left;width: calc(100% - 34px)!important;}
+#customer-profile .page-content .input-group-select .input-group-addon{float: right;border: 1px solid #dbdbdb;background-color: #fbfdff;width: 34px;padding: 0;line-height: 34px;box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);}
+
+#customer-profile .page-content .bootstrap-select .bs-actionsbox, #customer-profile .page-content .bootstrap-select .bs-donebutton, #customer-profile .page-content .bootstrap-select .bs-searchbox {padding: 4px 8px;border-bottom: 1px solid #eee;;height: 45px;}
+#customer-profile .page-content .bootstrap-select .dropdown-menu.open{padding: 0;}
+#customer-profile .page-content .bootstrap-select .dropdown-menu.inner {position: static;float: none;border: 0;padding: 5px 0;margin: 0;border-radius: 0;-webkit-box-shadow: none;box-shadow: none;}
+#customer-profile .page-content .bootstrap-select .dropdown-menu {margin-top: 0;border-top-left-radius: 0;border-top-right-radius: 0;border-top: 0;}
+#customer-profile .page-content .bootstrap-select .dropdown-menu {min-width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+#customer-profile .page-content .bootstrap-select .dropdown-menu.open .inner{width: 100%;}
+
+#customer-profile .page-content .client-profile-image-thumb {height: 160px;width: 160px;border-radius: 50%;}
+#contact .modal-dialog .modal-content{max-height: 90%;height: 90%;display: block;}
+
+/*Notes UI*/
+.btn-icon i.fa{line-height: 22px;text-align: center;}
+.btn-danger.btn-icon._delete i.fa{color: rgba(0,0,0,0.54) !important;}
+
+/*Statement UI*/
+#statement-html{display: contents;}
+.statement-account-summary tbody>tr>td {padding: 3px 6px;border-top: 0;}
+.table-statement.table-bordered {border: 1px solid #ddd;}
+
+.btn.btn-info:focus{background-color: #009688;border-color: #009688;}
+.customer_map {height: 500px;}
+
+/*Import Customer*/
+#import-customers .page-header {height: auto;min-height: 7.6rem;}
+#import-customers ul{list-style: none;padding-left: 0;}
+
+/*All Customer*/
+#all-contacts .page-header {height: auto;min-height: 7.6rem;}
+#all-contacts .client-profile-image-small {height: 32px;width: 32px;border-radius: 50%;}

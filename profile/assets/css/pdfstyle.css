@@ -1,0 +1,107 @@
+body{
+	font-family: 'DejaVu Sans Condensed';
+	font-size: 12px;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+p{
+	margin: 0;
+}
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+table{
+	width: 100%;
+}
+
+th{
+	font-size: 10px;
+}
+.received-date{
+	position: fixed; 
+	right: 0;
+	top: -5; 
+	font-size: 10px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.pull-left{
+	float:left;
+	text-align: left;
+}
+
+.pull-right{
+	float:right;
+	text-align: left;
+	clear: both;
+}
+
+.label{
+	font-size: 8px;
+}
+
+.col-md-4{
+	width:33.33333333%;
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.col-md-6{
+	width:50%;
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.text-8{
+	font-size: 8px;
+}
+
+.text-10{
+	font-size: 10px;
+}
+
+.text-12{
+	font-size: 12px;
+}
+.border{
+	border: 1px solid #000000;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 0 2px;
+}
+
+p.underline{
+	border-bottom: 1px solid #000000;
+}
+p.upperline{
+	border-top: 1px solid #000000;
+}
+
+.width-150{
+	width: 150px;
+}
+
+.width-5{
+	width: 5px;
+}
+
+
+.text-justify{
+	text-align: justify;
+}
+
+.text-check{
+	font-weight: 400;
+}
+
+.clearfix{
+	clear: both;
+}

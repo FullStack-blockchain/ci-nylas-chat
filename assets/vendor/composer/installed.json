@@ -1,0 +1,479 @@
+[
+    {
+        "name": "needim/noty",
+        "version": "v3.1.2",
+        "version_normalized": "3.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/needim/noty.git",
+            "reference": "8cac04259d9fe5e5aa8b83639c9000bc08e94a57"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/needim/noty/zipball/8cac04259d9fe5e5aa8b83639c9000bc08e94a57",
+            "reference": "8cac04259d9fe5e5aa8b83639c9000bc08e94a57",
+            "shasum": ""
+        },
+        "time": "2017-07-27 17:46:37",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nedim Arabaci",
+                "homepage": "http://ned.im",
+                "role": "Developer"
+            }
+        ],
+        "description": "Noty is a library that makes it easy to create alert - success - error - warning - information - confirmation messages as an alternative the standard alert dialog.",
+        "homepage": "http://ned.im/noty",
+        "keywords": [
+            "notification",
+            "noty"
+        ]
+    },
+    {
+        "name": "ckeditor/ckeditor",
+        "version": "4.7.2",
+        "version_normalized": "4.7.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ckeditor/ckeditor-releases.git",
+            "reference": "e1db4f159d7743c076e464ce90dc8b421ebc8ef0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/e1db4f159d7743c076e464ce90dc8b421ebc8ef0",
+            "reference": "e1db4f159d7743c076e464ce90dc8b421ebc8ef0",
+            "shasum": ""
+        },
+        "time": "2017-08-17 17:01:28",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+",
+            "LGPL-2.1+",
+            "MPL-1.1+"
+        ],
+        "authors": [
+            {
+                "name": "CKSource",
+                "homepage": "http://cksource.com"
+            }
+        ],
+        "description": "JavaScript WYSIWYG web text editor.",
+        "homepage": "http://ckeditor.com",
+        "keywords": [
+            "CKEditor",
+            "editor",
+            "fckeditor",
+            "html",
+            "javascript",
+            "richtext",
+            "text",
+            "wysiwyg"
+        ]
+    },
+    {
+        "name": "kriswallsmith/assetic",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kriswallsmith/assetic.git",
+            "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+            "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "symfony/process": "~2.1|~3.0"
+        },
+        "conflict": {
+            "twig/twig": "<1.27"
+        },
+        "require-dev": {
+            "leafo/lessphp": "^0.3.7",
+            "leafo/scssphp": "~0.1",
+            "meenie/javascript-packer": "^1.1",
+            "mrclay/minify": "<2.3",
+            "natxet/cssmin": "3.0.4",
+            "patchwork/jsqueeze": "~1.0|~2.0",
+            "phpunit/phpunit": "~4.8 || ^5.6",
+            "psr/log": "~1.0",
+            "ptachoire/cssembed": "~1.0",
+            "symfony/phpunit-bridge": "~2.7|~3.0",
+            "twig/twig": "~1.23|~2.0",
+            "yfix/packager": "dev-master"
+        },
+        "suggest": {
+            "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+            "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+            "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+            "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
+            "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+            "twig/twig": "Assetic provides the integration with the Twig templating engine"
+        },
+        "time": "2016-11-11 18:43:20",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Assetic": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kris Wallsmith",
+                "email": "kris.wallsmith@gmail.com",
+                "homepage": "http://kriswallsmith.net/"
+            }
+        ],
+        "description": "Asset Management for PHP",
+        "homepage": "https://github.com/kriswallsmith/assetic",
+        "keywords": [
+            "assets",
+            "compression",
+            "minification"
+        ]
+    },
+    {
+        "name": "robloach/component-installer",
+        "version": "0.2.3",
+        "version_normalized": "0.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RobLoach/component-installer.git",
+            "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/908a859aa7c4949ba9ad67091e67bac10b66d3d7",
+            "reference": "908a859aa7c4949ba9ad67091e67bac10b66d3d7",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "kriswallsmith/assetic": "1.*",
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "composer/composer": "1.*@alpha",
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2015-08-10 12:35:38",
+        "type": "composer-plugin",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            },
+            "class": "ComponentInstaller\\ComponentInstallerPlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "ComponentInstaller": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Rob Loach",
+                "homepage": "http://robloach.net"
+            }
+        ],
+        "description": "Allows installation of Components via Composer."
+    },
+    {
+        "name": "select2/select2",
+        "version": "4.0.3",
+        "version_normalized": "4.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/select2/select2.git",
+            "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/select2/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
+            "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
+            "shasum": ""
+        },
+        "require": {
+            "robloach/component-installer": "*"
+        },
+        "time": "2016-05-27 01:16:06",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "dist/js/select2.js"
+                ],
+                "styles": [
+                    "dist/css/select2.css"
+                ],
+                "files": [
+                    "dist/js/select2.js",
+                    "dist/js/i18n/*.js",
+                    "dist/css/select2.css"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Select2 is a jQuery based replacement for select boxes.",
+        "homepage": "https://select2.github.io/"
+    },
+    {
+        "name": "components/jquery",
+        "version": "3.2.1",
+        "version_normalized": "3.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jquery.git",
+            "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jquery/zipball/e5534d4ab8e80c159553d507e358ed20a806d3bf",
+            "reference": "e5534d4ab8e80c159553d507e358ed20a806d3bf",
+            "shasum": ""
+        },
+        "time": "2017-03-21 07:01:49",
+        "type": "component",
+        "extra": {
+            "component": {
+                "scripts": [
+                    "jquery.js"
+                ],
+                "files": [
+                    "jquery.min.js",
+                    "jquery.min.map",
+                    "jquery.slim.js",
+                    "jquery.slim.min.js",
+                    "jquery.slim.min.map"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "JS Foundation and other contributors"
+            }
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
+        "name": "components/jqueryui",
+        "version": "1.12.1",
+        "version_normalized": "1.12.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/components/jqueryui.git",
+            "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+            "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+            "shasum": ""
+        },
+        "require": {
+            "components/jquery": ">=1.6"
+        },
+        "time": "2016-09-16 05:47:55",
+        "type": "component",
+        "extra": {
+            "component": {
+                "name": "jquery-ui",
+                "scripts": [
+                    "jquery-ui.js"
+                ],
+                "files": [
+                    "ui/**",
+                    "themes/**",
+                    "jquery-ui.min.js"
+                ],
+                "shim": {
+                    "deps": [
+                        "jquery"
+                    ],
+                    "exports": "jQuery"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "jQuery UI Team",
+                "homepage": "http://jqueryui.com/about"
+            },
+            {
+                "name": "Joern Zaefferer",
+                "email": "joern.zaefferer@gmail.com",
+                "homepage": "http://bassistance.de"
+            },
+            {
+                "name": "Scott Gonzalez",
+                "email": "scott.gonzalez@gmail.com",
+                "homepage": "http://scottgonzalez.com"
+            },
+            {
+                "name": "Kris Borchers",
+                "email": "kris.borchers@gmail.com",
+                "homepage": "http://krisborchers.com"
+            },
+            {
+                "name": "Mike Sherov",
+                "email": "mike.sherov@gmail.com",
+                "homepage": "http://mike.sherov.com"
+            },
+            {
+                "name": "TJ VanToll",
+                "email": "tj.vantoll@gmail.com",
+                "homepage": "http://tjvantoll.com"
+            },
+            {
+                "name": "Corey Frang",
+                "email": "gnarf37@gmail.com",
+                "homepage": "http://gnarf.net"
+            },
+            {
+                "name": "Felix Nagel",
+                "email": "info@felixnagel.com",
+                "homepage": "http://www.felixnagel.com"
+            }
+        ],
+        "description": "jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice."
+    },
+    {
+        "name": "symfony/process",
+        "version": "v3.3.9",
+        "version_normalized": "3.3.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/process.git",
+            "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/process/zipball/b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
+            "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2017-07-29 21:54:42",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Process\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Process Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "igorescobar/jquery-mask-plugin",
+        "version": "v1.14.1",
+        "version_normalized": "1.14.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kamihouse/jQuery-Mask-Plugin.git",
+            "reference": "678a7df1f0bb275ce53f365b91af99d86850978d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kamihouse/jQuery-Mask-Plugin/zipball/678a7df1f0bb275ce53f365b91af99d86850978d",
+            "reference": "678a7df1f0bb275ce53f365b91af99d86850978d",
+            "shasum": ""
+        },
+        "time": "2016-04-27 16:16:55",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Escobar",
+                "email": "blog@igorescobar.com",
+                "homepage": "https://about.me/igorescobar",
+                "role": "Developer"
+            },
+            {
+                "name": "Thiago Pereira Rosa",
+                "email": "thiagor@engineer.com",
+                "homepage": "http://coderi.com.br",
+                "role": "Contributor"
+            }
+        ],
+        "description": "A jQuery Plugin to make masks on form fields and html elements.",
+        "homepage": "https://github.com/igorescobar/jQuery-Mask-Plugin",
+        "keywords": [
+            "jquery",
+            "mask",
+            "plugin"
+        ]
+    }
+]

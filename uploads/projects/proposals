@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>Bufulo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic"
+          rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <style type="text/css">
+        [fuse-cloak],
+        .fuse-cloak {
+            display: none !important;
+        }
+    </style>
+
+    <link rel="manifest" href="https://sandbox.bufulo.com/a_manifest.json">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#CDDC39">
+    <meta name="apple-mobile-web-app-title" content="Sandbox Admin">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="https://sandbox.bufulo.com/assets/pwa-icon/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://sandbox.bufulo.com/assets/pwa-icon/iOS/Icon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://sandbox.bufulo.com/assets/pwa-icon/iOS/Icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://sandbox.bufulo.com/assets/pwa-icon/iOS/Icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://sandbox.bufulo.com/assets/pwa-icon/iOS/Icon-144.png">
+    <link rel="apple-touch-icon" href="https://sandbox.bufulo.com/assets/pwa-icon/iOS/Icon-57.png">
+
+    <meta name="msapplication-TileColor" content="#CDDC39">
+    <meta name="theme-color" content="#CDDC39">
+
+    <link href="https://sandbox.bufulo.com/assets-old/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://sandbox.bufulo.com/assets-old/plugins/app-build/vendor.css?v=2.0.1" rel="stylesheet">
+    <!-- Icons.css -->
+    <link type="text/css" rel="stylesheet" href="https://sandbox.bufulo.com/assets/icons/fuse-icon-font/style.css">
+    <!-- Animate.css -->
+    <link type="text/css" rel="stylesheet"
+          href="https://sandbox.bufulo.com/assets/node_modules/animate.css/animate.min.css">
+    <!-- PNotify -->
+    <link type="text/css" rel="stylesheet"
+          href="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/PNotifyBrightTheme.css">
+    <!-- Nvd3 - D3 Charts -->
+    <link type="text/css" rel="stylesheet"
+          href="https://sandbox.bufulo.com/assets/node_modules/nvd3/build/nv.d3.min.css">
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" rel="stylesheet"
+          href="https://sandbox.bufulo.com/assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <!-- Fuse Html -->
+    <link type="text/css" rel="stylesheet" href="https://sandbox.bufulo.com/assets/fuse-html/fuse-html.min.css">
+
+
+                <!-- Main CSS -->
+    <link type="text/css" rel="stylesheet" href="https://sandbox.bufulo.com/assets/css/main.css">
+    <!-- / STYLESHEETS -->
+<!--    -->            <link href="https://sandbox.bufulo.com/assets/css/custom.css" rel="stylesheet">
+    
+
+
+    <style class="custom_style_table-items-heading">
+.table.items thead{
+background:#0a52ff !important;
+}
+</style>
+<style class="custom_style_btn-secondary">
+.btn-secondary{
+background-color:#3b4cbe !important;
+}
+
+                        .btn-secondary:focus,.btn-secondary.focus,.btn-secondary:hover,.btn-secondary:active,
+                        .btn-secondary.active,
+                        .open > .dropdown-toggle.btn-secondary,.btn-secondary:active:hover,
+                        .btn-secondary.active:hover,
+                        .open > .dropdown-toggle.btn-secondary:hover,
+                        .btn-secondary:active:focus,
+                        .btn-secondary.active:focus,
+                        .open > .dropdown-toggle.btn-secondary:focus,
+                        .btn-secondary:active.focus,
+                        .btn-secondary.active.focus,
+                        .open > .dropdown-toggle.btn-secondary.focus,
+                        .btn-secondary:active,
+                        .btn-secondary.active,
+                        .open > .dropdown-toggle.btn-secondary{background-color:#091a8c;color:#fff;border-color:#091a8c}
+                        .btn-secondary.disabled,
+                        .btn-secondary[disabled],
+                        fieldset[disabled] .btn-secondary,
+                        .btn-secondary.disabled:hover,
+                        .btn-secondary[disabled]:hover,
+                        fieldset[disabled] .btn-secondary:hover,
+                        .btn-secondary.disabled:focus,
+                        .btn-secondary[disabled]:focus,
+                        fieldset[disabled] .btn-secondary:focus,
+                        .btn-secondary.disabled.focus,
+                        .btn-secondary[disabled].focus,
+                        fieldset[disabled] .btn-secondary.focus,
+                        .btn-secondary.disabled:active,
+                        .btn-secondary[disabled]:active,
+                        fieldset[disabled] .btn-secondary:active,
+                        .btn-secondary.disabled.active,
+                        .btn-secondary[disabled].active,
+                        fieldset[disabled] .btn-secondary.active {
+                            background-color: #6d7ef0;color:#fff;border-color:#6d7ef0;}.btn-secondary {
+border-color:#3b4cbe !important;
+}
+</style>
+<style class="custom_style_btn-info">
+.btn-info{
+background-color:#3b4cbe !important;
+}
+
+                        .btn-info:focus,.btn-info.focus,.btn-info:hover,.btn-info:active,
+                        .btn-info.active,
+                        .open > .dropdown-toggle.btn-info,.btn-info:active:hover,
+                        .btn-info.active:hover,
+                        .open > .dropdown-toggle.btn-info:hover,
+                        .btn-info:active:focus,
+                        .btn-info.active:focus,
+                        .open > .dropdown-toggle.btn-info:focus,
+                        .btn-info:active.focus,
+                        .btn-info.active.focus,
+                        .open > .dropdown-toggle.btn-info.focus,
+                        .btn-info:active,
+                        .btn-info.active,
+                        .open > .dropdown-toggle.btn-info{background-color:#091a8c;color:#fff;border-color:#091a8c}
+                        .btn-info.disabled,
+                        .btn-info[disabled],
+                        fieldset[disabled] .btn-info,
+                        .btn-info.disabled:hover,
+                        .btn-info[disabled]:hover,
+                        fieldset[disabled] .btn-info:hover,
+                        .btn-info.disabled:focus,
+                        .btn-info[disabled]:focus,
+                        fieldset[disabled] .btn-info:focus,
+                        .btn-info.disabled.focus,
+                        .btn-info[disabled].focus,
+                        fieldset[disabled] .btn-info.focus,
+                        .btn-info.disabled:active,
+                        .btn-info[disabled]:active,
+                        fieldset[disabled] .btn-info:active,
+                        .btn-info.disabled.active,
+                        .btn-info[disabled].active,
+                        fieldset[disabled] .btn-info.active {
+                            background-color: #6d7ef0;color:#fff;border-color:#6d7ef0;}.btn-info {
+border-color:#3b4cbe !important;
+}
+</style>
+<style class="custom_style_admin-menu">
+.bg-primary-700.text-auto{
+background-color:#3a3a3b !important;
+}
+</style>
+<style class="custom_style_user-welcome-text-color">
+.welcome_user_text_color{
+color:#334cbe !important;
+}
+</style>
+<style class="custom_style_admin-menu-active-item">
+
+                #sidenav li.active,
+                #setup-menu li.active,
+                #sidenav.nav > li:hover,
+                #sidenav.nav > li:focus,
+                #setup-menu > li:hover,
+                #setup-menu > li:focus{
+background:#334cbe !important;
+}
+</style>
+<style class="custom_style_admin-menu-active-item-color">
+
+                #sidenav li.active > a,
+                #setup-menu li.active > a{
+color:#ffffff !important;
+}
+</style>
+<style class="custom_style_admin-menu-active-subitem">
+#sidenav li.active > ul{
+background:#6c6464 !important;
+}
+</style>
+<style class="custom_style_admin-menu-submenu-links">
+#sidenav > li > ul > li > a{
+color:#ffffff !important;
+}
+</style>
+<style class="custom_style_top-header">
+nav#toolbar.bg-white{
+background:#ffffff !important;
+}
+</style>
+<style class="custom_style_top-header-links">
+#toolbar .header-icon-button > i,#toolbar .language-button .dropdown-toggle .align-items-center span.d-none{
+color:#3a3a3b !important;
+}
+</style>
+    <script>var site_url="https://sandbox.bufulo.com/",admin_url="https://sandbox.bufulo.com/admin/",max_php_ini_upload_size_bytes="2097152",google_api="",calendarIDs="",is_admin="1",is_staff_member="1",has_permission_tasks_checklist_items_delete="1",app_language="english",app_is_mobile="",app_user_browser="chrome",app_date_format="Y-m-d",app_decimal_places="2",app_scroll_responsive_tables="0",app_company_is_required="1",app_default_view_calendar="month",app_maximum_allowed_ticket_attachments="4",app_show_setup_menu_item_only_on_hover="0",app_calendar_events_limit="4",app_tables_pagination_limit="25",app_newsfeed_maximum_files_upload="10",app_time_format="24",app_decimal_separator=".",app_thousand_separator=",",app_currency_placement="before",app_timezone="Asia/Kolkata",app_calendar_first_day="0",app_allowed_files=".png,.jpg,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar,.txt",app_show_table_export_button="to_all",app_desktop_notifications="1",app_dismiss_desktop_not_after="360";var appLang = {};appLang["invoice_task_billable_timers_found"] = "Started timers found";appLang["validation_extension_not_allowed"] = "File extension not allowed";appLang["tag"] = "Tag";appLang["options"] = "Options";appLang["no_items_warning"] = "Enter at least one item.";appLang["item_forgotten_in_preview"] = "Have you forgotten to add this item?";appLang["email_exists"] = "Email already exists";appLang["new_notification"] = "New Notification!";appLang["estimate_number_exists"] = "This estimate number exists for the ongoing year.";appLang["invoice_number_exists"] = "This invoice number exists for the ongoing year.";appLang["confirm_action_prompt"] = "Are you sure you want to perform this action?";appLang["calendar_expand"] = "expand";appLang["proposal_save"] = "Save Proposal";appLang["contract_save"] = "Save Contract";appLang["media_files"] = "Files";appLang["credit_note_number_exists"] = "Credit note number already exists";appLang["item_field_not_formatted"] = "The number in the input field is not formatted while edit/add item and should remain not formatted do not try to format it manually in here.";appLang["filter_by"] = "Filter by";appLang["you_can_not_upload_any_more_files"] = "You can not upload any more files";appLang["cancel_upload"] = "Cancel Upload";appLang["remove_file"] = "Remove file";appLang["browser_not_support_drag_and_drop"] = "Your browser does not support drag'n'drop file uploads";appLang["drop_files_here_to_upload"] = "Drop files here to upload";appLang["file_exceeds_max_filesize"] = "The uploaded file exceeds the upload_max_filesize directive in php.ini (2 MB)";appLang["file_exceeds_maxfile_size_in_form"] = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form (2 MB)";appLang["unit"] = "Unit";appLang["dt_length_menu_all"] = "All";appLang["dt_button_reload"] = "Reload";appLang["dt_button_excel"] = "Excel";appLang["dt_button_csv"] = "CSV";appLang["dt_button_pdf"] = "PDF";appLang["dt_button_print"] = "Print";appLang["dt_button_export"] = "Export";appLang["search_ajax_empty"] = "Select and begin typing";appLang["search_ajax_initialized"] = "Start typing to search";appLang["search_ajax_searching"] = "Searching...";appLang["not_results_found"] = "No results found";appLang["search_ajax_placeholder"] = "Type to search...";appLang["currently_selected"] = "Currently Selected";appLang["task_stop_timer"] = "Stop Timer";appLang["dt_button_column_visibility"] = "Visibility";appLang["note"] = "Note";appLang["search_tasks"] = "Search Tasks";appLang["confirm"] = "Confirm";appLang["showing_billable_tasks_from_project"] = "Showing billable tasks from project";appLang["invoice_task_item_project_tasks_not_included"] = "Projects tasks are not included in this list.";appLang["credit_amount_bigger_then_invoice_balance"] = "Total credits amount is bigger then invoice balance due";appLang["credit_amount_bigger_then_credit_note_remaining_credits"] = "Total credits amount is bigger then remaining credits";appLang["save"] = "Save";</script>    <script>
+        appLang['datatables'] = {"emptyTable":"No entries found","info":"Showing _START_ to _END_ of _TOTAL_ entries","infoEmpty":"Showing 0 to 0 of 0 entries","infoFiltered":"(filtered from _MAX_ total entries)","lengthMenu":"_MENU_","loadingRecords":"Loading...","processing":"<div class=\"dt-loader\"><\/div>","search":"<div class=\"input-group\"><span class=\"input-group-addon\"><span class=\"fa fa-search\"><\/span><\/span>","searchPlaceholder":"Search...","zeroRecords":"No matching records found","paginate":{"first":"First","last":"Last","next":"Next","previous":"Previous"},"aria":{"sortAscending":" activate to sort column ascending","sortDescending":" activate to sort column descending"}};
+        var totalUnreadNotifications = 0,
+            proposalsTemplates = [],
+            contractsTemplates = [],
+            availableTags = [],
+            availableTagsIds = [],
+            billingAndShippingFields = ['billing_street', 'billing_city', 'billing_state', 'billing_zip', 'billing_country', 'shipping_street', 'shipping_city', 'shipping_state', 'shipping_zip', 'shipping_country'],
+            locale = 'en',
+            isRTL = 'false',
+            tinymceLang = '',
+            monthsJSON = '["January","February","March","April","May","June","July","August","September","October","November","December"]',
+            taskid, taskTrackingStatsData, taskAttachmentDropzone, taskCommentAttachmentDropzone,
+            leadAttachmentsDropzone, newsFeedDropzone, expensePreviewDropzone, taskTrackingChart,
+            cfh_popover_templates = {}, _table_api;
+    </script>
+        <script>
+        if (typeof (jQuery) === 'undefined' && !window.deferAfterjQueryLoaded) {
+            window.deferAfterjQueryLoaded = [];
+            Object.defineProperty(window, "$", {
+                set: function (value) {
+                    window.setTimeout(function () {
+                        $.each(window.deferAfterjQueryLoaded, function (index, fn) {
+                            fn();
+                        });
+                    }, 0);
+                    Object.defineProperty(window, "$", {
+                        value: value
+                    });
+                },
+                configurable: true
+            });
+        }
+
+        var csrfData = {"formatted":{"csrf_token_name":"884b1e71b6cecdd8035916493235e0e3"},"token_name":"csrf_token_name","hash":"884b1e71b6cecdd8035916493235e0e3"};
+
+        if (typeof(jQuery) == 'undefined') {
+
+            window.deferAfterjQueryLoaded.push(function () {
+                csrf_jquery_ajax_setup();
+            });
+            window.addEventListener('load',function(){
+                csrf_jquery_ajax_setup();
+            },true);
+        } else {
+            csrf_jquery_ajax_setup();
+        }
+
+        function csrf_jquery_ajax_setup() {
+                $.ajaxSetup({
+                    data: csrfData.formatted
+                });
+        }
+ </script>
+ </head>
+<body class="layout layout-vertical layout-left-navigation layout-below-toolbar layout-below-footer" class="app admin  utilities file_manager user-id-1 chrome">
+
+<link type="text/css" rel="stylesheet" href="https://sandbox.bufulo.com/assets/css/client.css">
+<main>
+    <div id="wrapper">
+        
+<aside id="aside" class="aside aside-left" data-fuse-bar="aside" data-fuse-bar-media-step="md"
+       data-fuse-bar-position="left">
+    <div class="aside-content bg-primary-700 text-auto">
+
+        <div class="aside-toolbar">
+
+            <div class="logo">
+                <a href="https://sandbox.bufulo.com/admin/" class=" logo logo-text">Bufulo</a>            </div>
+
+            <button id="toggle-fold-aside-button" type="button" class="btn btn-icon d-none d-lg-block"
+                    data-fuse-aside-toggle-fold data-toggle="tooltip" title="Nav Toggle" data-placement="bottom">
+                <i class="icon icon-backburger"></i>
+            </button>
+
+        </div>
+
+        <ul class="nav flex-column custom-scrollbar" id="sidenav" data-children=".nav-item">
+
+            <li class="subheader nav-item">
+                <!--<span class="quick-links">
+                                            <div class="dropdown">
+                    <a href="#" class="dropdown-toggle ripple row align-items-center justify-content-center no-gutters"
+                       id="dropdownQuickLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownQuickLinks">
+                                                    <li>
+                                <a class="dropdown-item" href="" >
+                                    <i class="fa fa-plus-square-o"></i>
+                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                                    </span>-->
+                <span class="welcome_user_text_color">
+                    Welcome Jupin                </span>
+                <span class="logout">
+                    <i class="icon s-6 icon-logout welcome_user_text_color" data-toggle="tooltip" title="Logout"
+                       data-placement="bottom" onclick="logout(); return false;"></i>
+                </span>
+            </li>
+
+                            <li class="nav-item menu-item-dashboard">
+                    <a href="https://sandbox.bufulo.com/admin/" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-tachometer menu-icon"></i>
+                        <span>Dashboard</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-child-calendar">
+                    <a href="https://sandbox.bufulo.com/admin/utilities/calendar" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-calendar menu-icon"></i>
+                        <span>Calendar</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-file_manager">
+                    <a href="https://sandbox.bufulo.com/admin/utilities/file_manager" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-folder menu-icon"></i>
+                        <span>File Manager</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-projects">
+                    <a href="https://sandbox.bufulo.com/admin/projects" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-bars menu-icon"></i>
+                        <span>Projects</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-customers">
+                    <a href="https://sandbox.bufulo.com/admin/clients" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-user-o menu-icon"></i>
+                        <span>Customers</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-sales">
+                    <a href="#" aria-expanded="false" class="nav-link ripple with-arrow collapsed"
+                         data-toggle="collapse" data-target="#collapse-sales" href="#" aria-expanded="false" aria-controls="collapse-sales">
+                        <i class="fa fa-money menu-icon"></i>
+                        <span>Sales</span>
+                                                    <span class="fa arrow"></span>
+                                            </a>
+                                            <ul id="collapse-sales" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="heading-sales" data-children=".nav-item">
+                                                            <li class="nav-item sub-menu-item-child-proposals"><a href="https://sandbox.bufulo.com/admin/proposals" class="nav-link ripple">
+                                                                                <span>Proposals</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-estimates"><a href="https://sandbox.bufulo.com/admin/estimates/list_estimates" class="nav-link ripple">
+                                                                                <span>Estimates</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-invoices"><a href="https://sandbox.bufulo.com/admin/invoices/list_invoices" class="nav-link ripple">
+                                                                                <span>Invoices</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-payments"><a href="https://sandbox.bufulo.com/admin/payments" class="nav-link ripple">
+                                                                                <span>Payments</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-credit_notes"><a href="https://sandbox.bufulo.com/admin/credit_notes" class="nav-link ripple">
+                                                                                <span>Credit Notes</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-items"><a href="https://sandbox.bufulo.com/admin/invoice_items" class="nav-link ripple">
+                                                                                <span>Items</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-contracts"><a href="https://sandbox.bufulo.com/admin/contracts" class="nav-link ripple">
+                                                                                <span>Contracts</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-subscriptions"><a href="https://sandbox.bufulo.com/admin/subscriptions" class="nav-link ripple">
+                                                                                <span>Recurring Billing</span>
+                                    </a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="nav-item menu-item-expenses">
+                    <a href="https://sandbox.bufulo.com/admin/expenses/list_expenses" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-dollar menu-icon"></i>
+                        <span>Expenses</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-tasks">
+                    <a href="https://sandbox.bufulo.com/admin/tasks/list_tasks" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-check-square menu-icon"></i>
+                        <span>Tasks</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-tickets">
+                    <a href="https://sandbox.bufulo.com/admin/tickets" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-ticket menu-icon"></i>
+                        <span>Support</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-leads">
+                    <a href="https://sandbox.bufulo.com/admin/leads" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-tty menu-icon"></i>
+                        <span>Leads</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-child-goals-tracking">
+                    <a href="https://sandbox.bufulo.com/admin/goals" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-flag-checkered menu-icon"></i>
+                        <span>Goals Tracking</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-child-surveys">
+                    <a href="https://sandbox.bufulo.com/admin/surveys" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-check-circle-o menu-icon"></i>
+                        <span>Surveys</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-knowledge-base">
+                    <a href="https://sandbox.bufulo.com/admin/knowledge_base" aria-expanded="false" class="nav-link ripple "
+                        >
+                        <i class="fa fa-question menu-icon"></i>
+                        <span>Knowledge Base</span>
+                                            </a>
+                                    </li>
+                                            <li class="nav-item menu-item-utilities">
+                    <a href="#" aria-expanded="false" class="nav-link ripple with-arrow collapsed"
+                         data-toggle="collapse" data-target="#collapse-utilities" href="#" aria-expanded="false" aria-controls="collapse-utilities">
+                        <i class="fa fa-cogs menu-icon"></i>
+                        <span>Utilities</span>
+                                                    <span class="fa arrow"></span>
+                                            </a>
+                                            <ul id="collapse-utilities" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="heading-utilities" data-children=".nav-item">
+                                                            <li class="nav-item sub-menu-item-child-media"><a href="https://sandbox.bufulo.com/admin/utilities/media" class="nav-link ripple">
+                                                                                <span>Media</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-bulk-pdf-exporter"><a href="https://sandbox.bufulo.com/admin/utilities/bulk_pdf_exporter" class="nav-link ripple">
+                                                                                <span>Bulk PDF Export</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-announcements"><a href="https://sandbox.bufulo.com/admin/announcements" class="nav-link ripple">
+                                                                                <span>Announcements</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-database-backup"><a href="https://sandbox.bufulo.com/admin/utilities/backup" class="nav-link ripple">
+                                                                                <span>Database Backup</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-activity-log"><a href="https://sandbox.bufulo.com/admin/utilities/activity_log" class="nav-link ripple">
+                                                                                <span>Activity Log</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-ticket-pipe-log"><a href="https://sandbox.bufulo.com/admin/utilities/pipe_log" class="nav-link ripple">
+                                                                                <span>Ticket Pipe Log</span>
+                                    </a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                                            <li class="nav-item menu-item-reports">
+                    <a href="#" aria-expanded="false" class="nav-link ripple with-arrow collapsed"
+                         data-toggle="collapse" data-target="#collapse-reports" href="#" aria-expanded="false" aria-controls="collapse-reports">
+                        <i class="fa fa-area-chart menu-icon"></i>
+                        <span>Reports</span>
+                                                    <span class="fa arrow"></span>
+                                            </a>
+                                            <ul id="collapse-reports" class="collapse" aria-expanded="false" role="tabpanel" aria-labelledby="heading-reports" data-children=".nav-item">
+                                                            <li class="nav-item sub-menu-item-child-sales"><a href="https://sandbox.bufulo.com/admin/reports/sales" class="nav-link ripple">
+                                                                                <span>Sales</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-expenses"><a href="https://sandbox.bufulo.com/admin/reports/expenses" class="nav-link ripple">
+                                                                                <span>Expenses</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-expenses-vs-income"><a href="https://sandbox.bufulo.com/admin/reports/expenses_vs_income" class="nav-link ripple">
+                                                                                <span>Expenses vs Income</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-leads"><a href="https://sandbox.bufulo.com/admin/reports/leads" class="nav-link ripple">
+                                                                                <span>Leads</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-reports_timesheets_overview"><a href="https://sandbox.bufulo.com/admin/staff/timesheets?view=all" class="nav-link ripple">
+                                                                                <span>Timesheets overview</span>
+                                    </a>
+                                </li>
+                                                            <li class="nav-item sub-menu-item-child-kb-articles"><a href="https://sandbox.bufulo.com/admin/reports/knowledge_base_articles" class="nav-link ripple">
+                                                                                <span>KB Articles</span>
+                                    </a>
+                                </li>
+                                                    </ul>
+                                    </li>
+                                                    <li class="nav-item" id="setup-menu-item">
+                <a href="#" aria-expanded="false" class="nav-link ripple with-arrow collapsed" data-toggle="collapse" data-target="#setup-menu-collapse" aria-expanded="false" aria-controls="setup-menu-collapse">
+                    <i class="fa fa-cog menu-icon"></i>
+                    <span>Setup</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul id="setup-menu-collapse"
+    class="collapse "
+    aria-expanded="false" role="tabpanel" aria-labelledby="heading-setup-menu" data-children=".nav-item">
+            <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/staff" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Staff</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-customers" href="#" aria-expanded="false" aria-controls="sub-collapse-customers">
+                                <span>Customers</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-customers" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-customers" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/clients/groups" class="nav-link ripple">
+                                                                <span>Groups</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-tickets" href="#" aria-expanded="false" aria-controls="sub-collapse-tickets">
+                                <span>Support</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-tickets" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-tickets" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/departments" class="nav-link ripple">
+                                                                <span>Departments</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/tickets/predefined_replies" class="nav-link ripple">
+                                                                <span>Predefined Replies</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/tickets/priorities" class="nav-link ripple">
+                                                                <span>Ticket Priority</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/tickets/statuses" class="nav-link ripple">
+                                                                <span>Ticket Statuses</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/tickets/services" class="nav-link ripple">
+                                                                <span>Services</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/tickets/spam_filters" class="nav-link ripple">
+                                                                <span>Spam Filters</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-leads" href="#" aria-expanded="false" aria-controls="sub-collapse-leads">
+                                <span>Leads</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-leads" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-leads" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/leads/sources" class="nav-link ripple">
+                                                                <span>Sources</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/leads/statuses" class="nav-link ripple">
+                                                                <span>Statuses</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/leads/email_integration" class="nav-link ripple">
+                                                                <span>Email Integration</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/leads/forms" class="nav-link ripple">
+                                                                <span>Web to Lead</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-finance" href="#" aria-expanded="false" aria-controls="sub-collapse-finance">
+                                <span>Finance</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-finance" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-finance" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/taxes" class="nav-link ripple">
+                                                                <span>Tax Rates</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/currencies" class="nav-link ripple">
+                                                                <span>Currencies</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/paymentmodes" class="nav-link ripple">
+                                                                <span>Payment Modes</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/expenses/categories" class="nav-link ripple">
+                                                                <span>Expenses Categories</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-contracts" href="#" aria-expanded="false" aria-controls="sub-collapse-contracts">
+                                <span>Contracts</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-contracts" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-contracts" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/contracts/types" class="nav-link ripple">
+                                                                <span>Contract Types</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/emails" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Email Templates</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/custom_fields" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Custom Fields</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/gdpr" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>GDPR</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/roles" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Roles</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="#" aria-expanded="false"
+               class="nav-link ripple with-arrow collapsed"
+                 data-toggle="collapse" data-target="#sub-collapse-menu-builder" href="#" aria-expanded="false" aria-controls="sub-collapse-menu-builder">
+                                <span>Menu Setup</span>
+                                    <span class="fa arrow"></span>
+                            </a>
+                            <ul id="sub-collapse-menu-builder" class="collapse" aria-expanded="false" role="tabpanel"
+                    aria-labelledby="sub-heading-menu-builder" data-children=".nav-item">
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/utilities/main_menu" class="nav-link ripple">
+                                                                <span>Main Menu</span>
+                            </a>
+                        </li>
+                                            <li class="nav-item">
+                            <a href="https://sandbox.bufulo.com/admin/utilities/setup_menu" class="nav-link ripple">
+                                                                <span>Setup Menu</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/utilities/theme_style" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Theme Style</span>
+                            </a>
+                    </li>
+                <li class="nav-item">
+            <a href="https://sandbox.bufulo.com/admin/settings" aria-expanded="false"
+               class="nav-link ripple "
+                >
+                                <span>Settings</span>
+                            </a>
+                    </li>
+            </ul>
+            </li>
+                        
+
+        </ul>
+    </div>
+
+</aside>
+        <div class="content-wrapper">
+
+            <nav id="toolbar" class="bg-white">
+
+    <div class="row no-gutters align-items-center flex-nowrap">
+
+        <div class="col">
+
+            <div class="row no-gutters align-items-center flex-nowrap">
+
+                <button type="button" class="toggle-aside-button btn btn-icon d-block d-lg-none"
+                        data-fuse-bar-toggle="aside">
+                    <i class="icon icon-menu"></i>
+                </button>
+
+                <div class="toolbar-separator d-block d-lg-none m-hidden-search"></div>
+                <a href="https://sandbox.bufulo.com/admin/utilities/file_manager" title="File Manager" class="header-icon-button btn btn-icon m-hidden-search"
+                    data-placement="bottom">
+                    <i class="fa fa-folder f-24"></i>
+                </a>
+                <div class="toolbar-separator"></div>
+
+                <button type="button" id="main-header-search-button" class="search-button btn btn-icon">
+                    <i class="icon icon-magnify"></i>
+                </button>
+
+                <div class="search-section fade" data-toggle="tooltip" data-placement="bottom"
+                     data-title="Use # + tagname to search by tags">
+                    <input type="search" id="search_input" class="form-control"
+                           placeholder="Search...">
+                    <div id="search_results"></div>
+                    <div id="top_search_button">
+                        <button class="btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="toolbar-separator m-hidden-search"></div>
+
+            </div>
+        </div>
+
+        <div class="col-auto m-hidden-search">
+
+            <div class="row no-gutters align-items-center justify-content-end">                
+                <div class="user-menu-button dropdown">
+
+                    <div class="dropdown-toggle ripple row align-items-center no-gutters px-2 px-sm-4" role="button"
+                         id="dropdownUserMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-wrapper">
+                            <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="img img-responsive avatar staff-profile-image-small pull-left" alt="Jupin Kukadiya" />                        </div>
+                        <span class="username mx-3 d-none d-md-block">Jupin Kukadiya</span>
+                    </div>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownUserMenu">
+
+                        <a class="dropdown-item" href="https://sandbox.bufulo.com/admin/profile">
+                            <div class="row no-gutters align-items-center flex-nowrap">
+                                <i class="icon-account"></i>
+                                <span class="px-3">My Profile</span>
+                            </div>
+                        </a>
+
+                        <a class="dropdown-item" href="https://sandbox.bufulo.com/admin/staff/timesheets">
+                            <div class="row no-gutters align-items-center flex-nowrap">
+                                <i class="icon-clock"></i>
+                                <span class="px-3">My Timesheets</span>
+                            </div>
+                        </a>
+
+                        <a class="dropdown-item" href="https://sandbox.bufulo.com/admin/staff/edit_profile">
+                            <div class="row no-gutters align-items-center flex-nowrap">
+                                <i class="icon-account-edit"></i>
+                                <span class="px-3">Edit Profile</span>
+                            </div>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <a class="dropdown-item" href="#" onclick="logout(); return false;">
+                            <div class="row no-gutters align-items-center flex-nowrap">
+                                <i class="icon-logout"></i>
+                                <span class="px-3">Logout</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                                    <div class="toolbar-separator d-none d-md-block "></div>
+
+                    <div class="language-button dropdown d-none d-md-block">
+
+                        <div class="dropdown-toggle ripple row align-items-center justify-content-center no-gutters px-0 px-sm-4"
+                             role="button" id="dropdownLanguageMenu" data-toggle="dropdown" aria-haspopup="true"
+                             aria-expanded="false">
+                            <div class="row no-gutters align-items-center">
+                                <span>English</span>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menu language-dropdown pull-right" aria-labelledby="dropdownLanguageMenu">
+
+                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language">
+                                <div class="row no-gutters align-items-center flex-nowrap">
+                                    <span class="px-3">System Default</span>
+                                </div>
+                            </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/turkish">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Turkish</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/dutch">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Dutch</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/indonesia">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Indonesia</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/spanish">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Spanish</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item active"" href="https://sandbox.bufulo.com/admin/staff/change_language/english">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">English</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/romanian">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Romanian</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/japanese">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Japanese</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/vietnamese">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Vietnamese</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/persian">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Persian</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/portuguese_br">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Portuguese_br</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/polish">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Polish</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/chinese">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Chinese</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/catalan">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Catalan</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/french">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">French</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/italian">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Italian</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/german">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">German</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/swedish">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Swedish</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/russian">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Russian</span>
+                                    </div>
+                                </a>
+                                                            <a class="dropdown-item " href="https://sandbox.bufulo.com/admin/staff/change_language/portuguese">
+                                    <div class="row no-gutters align-items-center flex-nowrap">
+                                        <span class="px-3">Portuguese</span>
+                                    </div>
+                                </a>
+                                                    </div>
+                    </div>
+                
+                                    <div class="toolbar-separator d-none d-md-block"></div>
+
+                    <button type="button" class="header-icon-button btn btn-icon open_newsfeed d-none d-md-block" data-toggle="tooltip"
+                            title="Share documents, ideas.." data-placement="bottom">
+                        <i class="icon icon-share-variant"></i>
+                    </button>
+                
+                <div class="toolbar-separator d-none d-md-block"></div>
+
+                <a href="https://sandbox.bufulo.com/admin/todo" class="header-icon-button btn btn-icon d-none d-md-block" data-toggle="tooltip"
+                   title="Todo items" data-placement="bottom">
+                    <i class="fa fa-check-square-o f-24"></i>
+                    <span class="label bg-warning icon-total-indicator nav-total-todos hide">0</span>
+                </a>
+
+                <div class="toolbar-separator"></div>
+
+                <div class="timer-dropdown" data-toggle="tooltip" title="Todo items"
+                     data-placement="bottom">
+                    <button href="#" class="dropdown-toggle header-icon-button btn btn-icon" data-toggle="dropdown">
+                        <i class="fa fa-clock-o f-28"></i>
+                        <span class="label bg-success icon-total-indicator icon-started-timers hide">
+                             0                        </span>
+                    </button>
+                    <ul class="dropdown-menu animated fadeIn started-timers-top width350" id="started-timers-top">
+                        <li class="text-center inline-block full-width">No started timers found</li><li class="divider top-dropdown-btn-divider"></li><button class="mtop15 text-center btn btn-success started-timers-button top-dropdown-btn" onclick="timer_action(this,0); return false;"><i class="fa fa-clock-o"></i> Start Timer</button><div class="text-center mtop15 view-all-timesheets"><a href="https://sandbox.bufulo.com/admin/staff/timesheets?view=all">View all timesheets</a></div>                    </ul>
+                </div>
+
+                <div class="toolbar-separator"></div>
+
+                <div class="notifications-dropdown pull-right" data-toggle="tooltip" title="Notifications" data-placement="bottom">
+                    <button href="#" class="dropdown-toggle header-icon-button btn btn-icon" data-toggle="dropdown">
+                        <i class="fa fa-bell-o f-24"></i>
+                                            </button>
+                    <ul class="dropdown-menu notifications animated fadeIn width400"
+    data-total-unread="0">
+    <li class="not_mark_all_as_read">
+        <a href="#"
+           onclick="mark_all_notifications_as_read_inline(); return false;">Mark all as read</a>
+    </li>
+            <li class="relative notification-wrapper" data-notification-id="19">
+                        <a href="https://sandbox.bufulo.com/admin/projects/view/1?group=project_files&file_id=3" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - New comment on project discussion</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-12 13:04:15">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="18">
+                        <a href="https://sandbox.bufulo.com/admin/projects/view/1?group=project_files&file_id=3" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - New comment on project discussion</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-12 13:03:57">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="17">
+                        <a href="https://sandbox.bufulo.com/admin/projects/view/1?group=project_files&file_id=3" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - New comment on project discussion</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-12 13:03:48">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="14">
+                        <a href="https://sandbox.bufulo.com/admin/#eventid=1" class="notification-top notification-link">
+                                <div class="notification-box">
+                                        <div class="media-body">
+                        <span class="notification-title">Calendar event today - Get Rent Professional Nikon Digital (DLSR) Camera ...</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-11 18:46:24">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="15">
+                        <a href="https://sandbox.bufulo.com/admin/#eventid=2" class="notification-top notification-link">
+                                <div class="notification-box">
+                                        <div class="media-body">
+                        <span class="notification-title">Calendar event today - Test Event ...</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-11 18:46:24">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="16">
+                        <a href="https://sandbox.bufulo.com/admin/#eventid=3" class="notification-top notification-link">
+                                <div class="notification-box">
+                                        <div class="media-body">
+                        <span class="notification-title">Calendar event today - sfdfsdfsdf ...</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-11 18:46:24">
+                                a week ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="11">
+                        <a href="https://sandbox.bufulo.com/admin/#postid=4" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - published new post</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-07 07:43:29">
+                                2 weeks ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="8">
+                        <a href="https://sandbox.bufulo.com/admin/#postid=3" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - published new post</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-07 07:43:28">
+                                2 weeks ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="5">
+                        <a href="https://sandbox.bufulo.com/admin/#postid=2" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - published new post</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-07 07:42:55">
+                                2 weeks ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="2">
+                        <a href="https://sandbox.bufulo.com/admin/#postid=1" class="notification-top notification-link">
+                                <div class="notification-box">
+                    <img src="https://sandbox.bufulo.com/assets-old/images/user-placeholder.jpg"  class="staff-profile-image-small img-circle notification-image pull-left" alt="Test Test" />                    <div class="media-body">
+                        <span class="notification-title">Test Test - published new post</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-07-07 07:39:52">
+                                2 weeks ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+            <li class="relative notification-wrapper" data-notification-id="1">
+                        <a href="https://sandbox.bufulo.com/admin/proposals/list_proposals/1" class="notification-top notification-link">
+                                <div class="notification-box">
+                                        <div class="media-body">
+                        <span class="notification-title">Proposal Accepted - PRO-000001</span><br/>
+                        <small class="text-muted">
+                                <span class="text-has-action" data-placement="right" data-toggle="tooltip"
+                                      data-title="2018-06-24 05:59:45">
+                                4 weeks ago                              </span>
+                        </small>
+                    </div>
+                </div>
+                            </a>
+                            </li>
+                <li class="divider no-mbot"></li>
+        <li class="text-center">
+                    <a href="https://sandbox.bufulo.com/admin/profile?notifications=true">View all notifications</a>
+            </li>
+</ul>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+    </div>
+</nav>            <div class="content custom-scrollbar">
+
+
+                    <div id="file-manager" class="page-layout simple right-sidebar">
+
+                        <div class="page-content-wrapper custom-scrollbar">
+
+                            <!-- HEADER -->
+                            <div class="page-header bg-primary text-auto p-6">
+
+                                <!-- HEADER CONTENT-->
+                                <div class="header-content d-flex flex-column justify-content-between">
+
+                                    <!-- TOOLBAR -->
+                                    <div class="toolbar row no-gutters justify-content-between">
+                                        
+
+                                    </div>
+                                    <!-- / TOOLBAR -->
+
+                                    <!-- BREADCRUMB -->
+                                    <div class="breadcrumb text-truncate row no-gutters align-items-center pl-0 pl-sm-20">
+
+                                        <span class="h4">My Files</span>
+
+                                        <i class="icon-chevron-right separator"></i>
+
+                                        <span class="h4">Documents</span>
+
+                                    </div>
+                                    <!-- / BREADCRUMB -->
+
+                                </div>
+                                <!-- / HEADER CONTENT -->
+
+                                <!-- ADD FILE BUTTON -->
+								
+                                <button id="add-file-button" type="button" data-toggle="modal" data-target="#add_folder" class="btn btn-danger btn-fab" aria-label="Add file">
+                                    <i class="icon icon-plus"></i>
+                                </button>
+                                <button id="add-file-button_left" type="button" data-toggle="modal" data-target="#add_file" class="btn btn-danger btn-fab" aria-label="Add file">
+                                    <i class="icon icon-upload"></i>
+                                </button>
+                                <!-- / ADD FILE BUTTON -->
+
+                            </div>
+                            <!-- / HEADER -->
+
+                            <!-- CONTENT -->
+                            <div class="page-content custom-scrollbar">
+                                <!-- LIST VIEW -->
+                                <table class="table list-view">
+
+                                    <thead>
+
+                                        <tr>
+                                            <th></th>
+                                            <th>Name</th>
+                                            <th class="d-none d-md-table-cell">Type</th>
+                                            <th class="d-none d-sm-table-cell">Size</th>
+                                            <th class="d-none d-lg-table-cell">Last Modified</th>
+                                            <th class="d-table-cell">Action</th>
+                                        </tr>
+
+                                    </thead>
+
+                                    <tbody>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=Clients" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=Clients" class="name folder_name">Clients</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=Clients" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=Clients" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=Clients" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                  <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="Clients" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="Clients" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="Clients">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=company" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=company" class="name folder_name">company</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=company" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=company" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=company" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                 <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="company" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="company" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="company">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=contracts" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=contracts" class="name folder_name">contracts</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=contracts" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=contracts" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=contracts" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                                                                              
+     
+                                                <button id="download-folder" data-id="contracts" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="contracts" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="contracts">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=credit_notes" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=credit_notes" class="name folder_name">credit_notes</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=credit_notes" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=credit_notes" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=credit_notes" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                                   <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="credit_notes" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="credit_notes" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="credit_notes">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=discussions" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=discussions" class="name folder_name">discussions</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=discussions" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=discussions" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=discussions" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                   <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="discussions" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="discussions" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="discussions">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=estimates" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=estimates" class="name folder_name">estimates</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=estimates" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=estimates" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=estimates" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                          <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="estimates" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="estimates" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="estimates">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=expenses" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=expenses" class="name folder_name">expenses</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=expenses" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=expenses" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=expenses" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                               
+     
+                                                <button id="download-folder" data-id="expenses" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="expenses" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="expenses">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=invoices" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=invoices" class="name folder_name">invoices</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=invoices" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=invoices" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=invoices" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                                                                           
+     
+                                                <button id="download-folder" data-id="invoices" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="invoices" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="invoices">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=leads" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=leads" class="name folder_name">leads</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=leads" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=leads" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=leads" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                           
+     
+                                                <button id="download-folder" data-id="leads" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="leads" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="leads">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=newsfeed" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=newsfeed" class="name folder_name">newsfeed</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=newsfeed" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=newsfeed" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=newsfeed" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                                          <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="newsfeed" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="newsfeed" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="newsfeed">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=projects" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=projects" class="name folder_name">projects</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=projects" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=projects" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=projects" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                                                              
+     
+                                                <button id="download-folder" data-id="projects" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="projects" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="projects">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=proposals" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=proposals" class="name folder_name">proposals</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=proposals" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=proposals" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=proposals" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />           
+     
+                                                <button id="download-folder" data-id="proposals" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="proposals" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="proposals">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=staff_profile_images" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=staff_profile_images" class="name folder_name">staff_profile_images</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=staff_profile_images" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=staff_profile_images" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=staff_profile_images" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+           <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="staff_profile_images" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="staff_profile_images" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="staff_profile_images">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=tasks" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=tasks" class="name folder_name">tasks</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=tasks" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=tasks" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=tasks" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                       
+     
+                                                <button id="download-folder" data-id="tasks" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="tasks" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="tasks">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=ticket_attachments" class="file-icon">
+                                                <i class="icon-folder"></i>
+                                            </td>
+                                                                                        <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=ticket_attachments" class="name folder_name">ticket_attachments</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=ticket_attachments" class="type d-none d-md-table-cell">Folder</td>                                            
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=ticket_attachments" class="size d-none d-sm-table-cell">4.00 KB</td>
+                                            <td data-directory-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=ticket_attachments" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                 <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                 <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+     
+                                                <button id="download-folder" data-id="ticket_attachments" data-toggle="modal" type="button" class="btn btn-icon" data-target="#zip_download" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </button>     
+                                                
+                                                <button id="rename-button" data-id="ticket_attachments" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                               
+                                                <input type="hidden" name="delete" value="ticket_attachments">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+                                                 </form>                                            </td>
+                                        </tr>
+																				                                                                                    <tr >
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=af59e31adc4bd8ebc28164b529ee979e.jpg" class="file-icon">
+                                                <i class="icon-file"></i>
+                                            </td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=af59e31adc4bd8ebc28164b529ee979e.jpg" class="name">af59e31adc4bd8ebc281</td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=af59e31adc4bd8ebc28164b529ee979e.jpg" class="type d-none d-md-table-cell">file</td>
+                                           
+
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=af59e31adc4bd8ebc28164b529ee979e.jpg" class="size d-none d-sm-table-cell">69.93 KB</td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=af59e31adc4bd8ebc28164b529ee979e.jpg" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                                     
+                                                <a download href="https://sandbox.bufulo.com//uploads/af59e31adc4bd8ebc28164b529ee979e.jpg" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </a>
+                                                <button id="rename-button" data-id="af59e31adc4bd8ebc28164b529ee979e.jpg" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                                
+                                                <input type="hidden" name="delete_file" value="af59e31adc4bd8ebc28164b529ee979e.jpg">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+
+                                                                                                <button id="share-link" data-id="https://sandbox.bufulo.com//uploads/af59e31adc4bd8ebc28164b529ee979e.jpg" data-toggle="modal" type="button" class="btn btn-icon" data-target="#share_file" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-plane"></i>
+                                                </button> 
+                                                 </form>                                            </td>
+                                        </tr>
+										                                                                                    <tr >
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=index.html" class="file-icon">
+                                                <i class="icon-file"></i>
+                                            </td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=index.html" class="name">index.html</td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=index.html" class="type d-none d-md-table-cell">file</td>
+                                           
+
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=index.html" class="size d-none d-sm-table-cell">0 bytes</td>
+                                            <td data-download-url="https://sandbox.bufulo.com/admin/utilities/file_manager?directory=index.html" class="last-modified d-none d-lg-table-cell">July 8, 2015</td>
+                                            <td class="d-table-cell">
+                                                <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                         
+                                                <a download href="https://sandbox.bufulo.com//uploads/index.html" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-cloud-download"></i>
+                                                </a>
+                                                <button id="rename-button" data-id="index.html" data-toggle="modal" type="button" class="btn btn-icon" data-target="#edit_folder" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-pencil"></i>
+                                                </button>                                                
+                                                <input type="hidden" name="delete_file" value="index.html">
+                                                <button type="submit"  class="btn btn-icon" data-fuse-bar-toggle="file-manager-info-sidebar">
+                                                    <i class="icon icon-delete"></i>
+                                                </button>
+
+                                                                                                <button id="share-link" data-id="https://sandbox.bufulo.com//uploads/index.html" data-toggle="modal" type="button" class="btn btn-icon" data-target="#share_file" data-fuse-bar-toggle="file-manager-info-sidebar" aria-label="Edit file">
+                                                    <i class="icon icon-plane"></i>
+                                                </button> 
+                                                 </form>                                            </td>
+                                        </tr>
+										                                    </tbody>
+                                </table>
+                                <!-- / LIST VIEW -->
+                            </div>
+                            <!-- / CONTENT -->
+                        </div>
+
+                        <aside class="page-sidebar custom-scrollbar" data-fuse-bar="file-manager-info-sidebar" data-fuse-bar-position="right" data-fuse-bar-media-step="lg">
+                            <!-- SIDEBAR HEADER -->
+                            <div class="header bg-secondary text-auto d-flex flex-column justify-content-between p-6">
+
+                                <!-- TOOLBAR -->
+                                <div class="toolbar row no-gutters align-items-center justify-content-end">
+
+                                    <button type="button" class="btn btn-icon">
+                                        <i class="icon-delete"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-icon">
+                                        <i class="icon icon-download"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-icon">
+                                        <i class="icon icon-dots-vertical"></i>
+                                    </button>
+
+                                </div>
+                                <!-- / TOOLBAR -->
+
+                                <!-- INFO -->
+                                <div>
+
+                                    <div class="title mb-2 head_wisdom"></div>
+
+                                    <div class="subtitle text-muted">
+                                        <span>Edited</span>
+                                        : May 8, 2017
+                                    </div>
+
+                                </div>
+                                <!-- / INFO-->
+
+                            </div>
+                            <!-- / SIDEBAR HEADER -->
+
+                            <!-- SIDENAV CONTENT -->
+                            <div class="content">
+
+                                <div class="file-details">
+
+                                    <div class="preview file-icon row no-gutters align-items-center justify-content-center">
+                                        <i class="icon-folder s-12"></i>
+                                    </div>
+
+                                    <div class="offline-switch row no-gutters align-items-center justify-content-between px-6 py-4">
+
+                                        <span>Available Offline</span>
+
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" aria-label="Toggle offline" />
+                                            <span class="custom-control-indicator"></span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="title px-6 py-4">Info</div>
+
+                                    <table class="table">
+
+                                        <tr class="type">
+                                            <th class="pl-6">Type</th>
+                                            <td>Folder</td>
+                                        </tr>
+
+                                        <tr class="size">
+                                            <th class="pl-6">Size</th>
+                                            <td>-</td>
+                                        </tr>
+
+                                        <tr class="location">
+                                            <th class="pl-6">Location</th>
+                                            <td>My Files > Documents</td>
+                                        </tr>
+
+                                        <tr class="owner">
+                                            <th class="pl-6">Owner</th>
+                                            <td>Me</td>
+                                        </tr>
+
+                                        <tr class="modified">
+                                            <th class="pl-6">Modified</th>
+                                            <td>April 8, 2017</td>
+                                        </tr>
+
+                                        <tr class="opened">
+                                            <th class="pl-6">Opened</th>
+                                            <td>April 8, 2017</td>
+                                        </tr>
+
+                                        <tr class="created">
+                                            <th class="pl-6">Created</th>
+                                            <td>April 8, 2017</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- / SIDENAV CONTENT -->
+                        </aside>
+                    </div>
+
+                      
+            </div>
+        </div>
+    </div>     
+<!-- Client send file modal -->
+<div class="modal fade" id="add_folder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                                                                  
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Add Folder</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+					<div class="form-group" app-field-wrapper="new_sub_directory">
+						<label for="new_sub_directory">Folder Name</label>
+						<input type="text" id="new_sub_directory" name="new_sub_directory" class="form-control"  value="">
+					</div>
+                                            </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Add Folder</button>
+            </div>
+            </form>        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="add_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                           <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Add Files</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group" app-field-wrapper="new_sub_directory">
+                        <label for="new_sub_directory">Select Files to Upload</label>
+                       <input type="file" name="files[]" multiple/>
+                    </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+            </form>        </div>
+    </div>
+</div>
+<div class="modal fade" id="edit_folder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                                                                                    <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Rename Folder</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group" app-field-wrapper="new_sub_directory">
+                        <label for="new_sub_directory">Rename Folder</label>
+                       <input type="text" name="rename" />
+                       <input type="hidden" name="dir_name" id="bookId">
+                    </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+            </form>        </div>
+    </div>
+</div>
+<div class="modal fade" id="zip_download" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />                                                             
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Download Folder</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body download">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group" app-field-wrapper="new_sub_directory">
+                        <label for="new_sub_directory">You are about to download the whole folder </label>
+                       <input type="hidden" name="download" id="download">
+                    </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Ok</button>
+            </div>
+            </form>        </div>
+    </div>
+</div>
+<div class="modal fade" id="share_file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="https://sandbox.bufulo.com/admin/utilities/file_manager" id="submit_here" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                                            <input type="hidden" name="csrf_token_name" value="884b1e71b6cecdd8035916493235e0e3" />
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Share Link</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body share">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group" app-field-wrapper="new_sub_directory">
+                       <label for="new_sub_directory">Copy link to share file Press ok close this popup</label>
+                       <input id="copylink" class="sharelink form-control" type="text" name="" onclick="this.select()" readonly>
+                       <input  type="hidden" name="share_url" id="share_url">
+                       <input type="hidden" name="number_count" id="count_num">
+                    </div>
+                    <div class="form-group" app-field-wrapper="new_sub_directory" id="dvStats" style="display:none">
+                       <label for="new_sub_directory">Form Email</label>                       
+                       <input type="email" name="from_email">
+                       <label for="new_sub_directory">To Email</label> 
+                       <input type="email" name="to_email">
+                       <input  type="hidden" name="share_url" id="share_url">
+                       <input type="hidden" name="number_count" id="count_num">
+                    </div>
+                                            </div>
+                </div>
+            </div>
+            <div class="modal-footer" id="ok">            
+                <button type="submit" class="btn btn-info">Ok</button>
+            </div>
+            <div class="modal-footer" style="display:none;">            
+                <button type="submit" class="btn btn-info">Send Email</button>
+            </div>         
+            <hr>
+            <a id="hh" class="form-group" onclick ="myFunction()" >Click here to share with email</a>
+            </form>        </div>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+    $("#dvStats").css("display","block");
+    $("#hh").css("display","none");
+    $(".modal-footer").css("display","block");
+    $("#ok").css("display","none");
+}
+</script>
+	
+<!-- Likes -->
+<div class="modal likes_modal fade" id="modal_post_likes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Colleagues who like this post</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div id="modal_post_likes_wrapper">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+         <a href="#" class="btn btn-info load_more_post_likes">Load More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Likes -->
+<div class="modal likes_modal animated fadeIn" id="modal_post_comment_likes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Colleagues who like this comment</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div id="modal_comment_likes_wrapper">
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-info load_more_post_comment_likes">Load More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="event"></div>
+<div id="newsfeed" class="animated fadeIn hide" >
+</div>
+<!-- Task modal view -->
+<div class="modal fade task-modal-single" id="task-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content data" style="display: flex !important;">
+
+    </div>
+  </div>
+</div>
+
+<!--Add/edit task modal-->
+<div id="_task"></div>
+
+<!-- Lead Data Add/Edit-->
+<div class="modal fade lead-modal" id="lead-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content data" style="display: flex !important;">
+
+    </div>
+  </div>
+</div>
+
+<div id="timers-logout-template-warning" class="hide">
+  <h2 class="bold">Started tasks timers found!<br />Are you sure you want to logout without stopping the timers?</h2>
+  <hr />
+  <a href="https://sandbox.bufulo.com/authentication/logout" class="btn btn-danger">Logout</a>
+</div>
+
+<!--Lead convert to customer modal-->
+<div id="lead_convert_to_customer"></div>
+
+<!--Lead reminder modal-->
+<div id="lead_reminder_modal"></div>
+<script src="https://sandbox.bufulo.com/assets-old/plugins/app-build/vendor.js?v=2.0.1"></script>
+<script src="https://sandbox.bufulo.com/assets-old/plugins/jquery/jquery-migrate.min.js"></script>
+<script src="https://sandbox.bufulo.com/assets-old/plugins/datatables/datatables.min.js?v=2.0.1"></script>
+<script src="https://sandbox.bufulo.com/assets-old/plugins/app-build/moment.min.js"></script>
+<script src='https://sandbox.bufulo.com/assets-old/plugins/app-build/bootstrap-select.min.js?v=2.0.1'></script>
+<script src="https://sandbox.bufulo.com/assets-old/plugins/tinymce/tinymce.min.js?v=2.0.1"></script>
+<script src='https://sandbox.bufulo.com/assets-old/plugins/jquery-validation/jquery.validate.min.js?v=2.0.1'></script>
+
+<!-- JAVASCRIPT -->
+<!-- Mobile Detect -->
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/mobile-detect/mobile-detect.min.js"></script>
+<!-- Perfect Scrollbar -->
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<!-- Popper.js -->
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+<!-- Nvd3 - D3 Charts -->
+<script type="text/javascript" src="https://sandbox.bufulo.com/assets/node_modules/d3/d3.min.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/nvd3/build/nv.d3.min.js"></script>
+<!-- PNotify -->
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotify.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyStyleMaterial.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyButtons.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyCallbacks.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyMobile.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyHistory.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyDesktop.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyConfirm.js"></script>
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets/node_modules/pnotify/dist/iife/PNotifyReference.js"></script>
+<!-- Fuse Html -->
+<script type="text/javascript" src="https://sandbox.bufulo.com/assets/fuse-html/fuse-html.min.js"></script>
+<!-- Main JS -->
+<script type="text/javascript"
+        src="https://sandbox.bufulo.com/assets-old/js/main.js"></script>
+<script type="text/javascript" src="https://sandbox.bufulo.com/assets/js/main.js"></script>
+<!-- / JAVASCRIPT -->
+
+    <script>
+        function custom_fields_hyperlink(){
+         var cf_hyperlink = $('body').find('.cf-hyperlink');
+         if(cf_hyperlink.length){
+             $.each(cf_hyperlink,function(){
+                var cfh_wrapper = $(this);
+                var cfh_field_to = cfh_wrapper.attr('data-fieldto');
+                var cfh_field_id = cfh_wrapper.attr('data-field-id');
+                var textEl = $('body').find('#custom_fields_'+cfh_field_to+'_'+cfh_field_id+'_popover');
+                var hiddenField = $("#custom_fields\\\["+cfh_field_to+"\\\]\\\["+cfh_field_id+"\\\]");
+                var cfh_value = cfh_wrapper.attr('data-value');
+                hiddenField.val(cfh_value);
+
+                if($(hiddenField.val()).html() != ''){
+                    textEl.html($(hiddenField.val()).html());
+                }
+                var cfh_field_name = cfh_wrapper.attr('data-field-name');
+                textEl.popover({
+                    html: true,
+                    trigger: "manual",
+                    placement: "top",
+                    title:cfh_field_name,
+                    content:function(){
+                        return $(cfh_popover_templates[cfh_field_id]).html();
+                    }
+                }).on("click", function(e){
+                    var $popup = $(this);
+                    $popup.popover("toggle");
+                    var titleField = $("#custom_fields_"+cfh_field_to+"_"+cfh_field_id+"_title");
+                    var urlField = $("#custom_fields_"+cfh_field_to+"_"+cfh_field_id+"_link");
+                    var ttl = $(hiddenField.val()).html();
+                    var cfUrl = $(hiddenField.val()).attr("href");
+                    if(cfUrl){
+                        $('#cf_hyperlink_open_'+cfh_field_id).attr('href',(cfUrl.indexOf('://') === -1 ? 'http://' + cfUrl : cfUrl));
+                    }
+                    titleField.val(ttl);
+                    urlField.val(cfUrl);
+                    $("#custom_fields_"+cfh_field_to+"_"+cfh_field_id+"_btn-save").click(function(){
+                        hiddenField.val((urlField.val() != '' ? '<a href="'+urlField.val()+'" target="_blank">' + titleField.val() + '</a>' : ''));
+                        textEl.html(titleField.val() == "" ? "Click here to add link" : titleField.val());
+                        $popup.popover("toggle");
+                    });
+                    $("#custom_fields_"+cfh_field_to+"_"+cfh_field_id+"_btn-cancel").click(function(){
+                        if(urlField.val() == ''){
+                            hiddenField.val('');
+                        }
+                        $popup.popover("toggle");
+                    });
+                });
+            });
+         }
+     }
+ </script>
+     <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Enable pusher logging - don't include this in production
+            // Pusher.logToConsole = true;
+                        var pusher_options = {"cluster":"us2"};
+            var pusher = new Pusher("cc73c3183faf5734c1de", pusher_options);
+            var channel = pusher.subscribe('notifications-channel-1');
+            channel.bind('notification', function (data) {
+                fetch_notifications();
+            });
+        });
+    </script>
+<script src="https://sandbox.bufulo.com/./sandbox-pwa-sw-register.js"></script>
+<script>
+
+</script>
+<script src="https://sandbox.bufulo.com/assets/file_manager/js/single-page.js"></script>
+</body>
+</html>

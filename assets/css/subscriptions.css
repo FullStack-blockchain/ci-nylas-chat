@@ -1,0 +1,30 @@
+#manage-subscription .page-header {height: auto;min-height: 7.6rem;}
+#manage-subscription button.dropdown-toggle::after{display: none;}
+#manage-subscription .dropdown-menu{margin: 1px 0;padding: 0}
+#manage-subscription .dropdown-menu li{border-top:0px solid rgba(0,0,0,0.12);}
+#manage-subscription .dropdown-menu>.active>a, #manage-subscription .dropdown-menu>.active>a:focus, #manage-subscription .dropdown-menu>.active>a:hover {color: #fff;text-decoration: none;background-color: #2196F3;outline: 0;}
+#manage-subscription .dropdown-menu>li>a {display: block;padding: 5px 20px;clear: both;font-weight: 400;line-height: 1.42857143;color: #333;white-space: nowrap;}
+#manage-subscription .dropdown-menu > li.dropdown-submenu {position: relative;}
+#manage-subscription .dropdown-menu > li.dropdown-submenu:after {position: absolute;top: 13px;right: 10px;content: "";margin-left: .255em;vertical-align: .255em;border-top: 0.35em solid transparent;border-right: 0;border-bottom: 0.35em solid transparent;border-left: .35em solid;}
+#manage-subscription .dropdown-menu > li.dropdown-submenu>.dropdown-menu {top: 0;left: -100%;width: 100%;margin: 0;border-radius: 0 6px 6px 6px;max-height: 500px;overflow-y: auto;}
+#manage-subscription .dropdown-menu > li.dropdown-submenu:hover > .dropdown-menu {display: block;}
+#manage-subscription .horizontal-tabs{border: none;}
+#manage-subscription .horizontal-tabs>li+li{margin-top: unset;}
+#manage-subscription .horizontal-tabs li{border-bottom: 1px solid #ddd;}
+#manage-subscription .horizontal-tabs li a{color: #333333;border-radius: unset;border: none;}
+#manage-subscription .horizontal-tabs li a i.fa{line-height: 22px;}
+#manage-subscription .horizontal-tabs li.active,#manage-subscription .horizontal-tabs li:hover{border-bottom: 3px solid #0087ce;}
+#manage-subscription .horizontal-tabs li.active a, #manage-subscription .horizontal-tabs li:hover a{color: #008ece;border: none;border-radius: unset;}
+#manage-subscription .horizontal-tabs li.active i, #manage-subscription .horizontal-tabs li:hover i{color: #008ece;}
+#manage-subscription .horizontal-tabs li a:hover, #manage-subscription .horizontal-tabs li a:focus{border: none;background: none;color: #008ece;}
+#manage-subscription .hr-panel-heading {margin: 20px -15px;}
+#manage-subscription .list-group-item {position: relative;display: block;padding: 10px 15px;margin-bottom: -1px;background-color: #fff;border: 1px solid #ddd;min-height: auto;}
+#manage-subscription .list-group-item:first-child {border-top-left-radius: 4px;border-top-right-radius: 4px;}
+#manage-subscription .list-group-item:last-child {border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;}
+
+#manage-subscription .fuse-widget-front {display: flex;flex-direction: column;flex: 1 1 auto;position: relative;overflow: hidden;visibility: visible;width: 100%;opacity: 1;z-index: 10;border-radius: 2px;transition: visibility 0s ease-in .2s,opacity 0s ease-in .2s,-webkit-transform .5s ease-out 0s;transition: transform .5s ease-out 0s,visibility 0s ease-in .2s,opacity 0s ease-in .2s;transition: transform .5s ease-out 0s,visibility 0s ease-in .2s,opacity 0s ease-in .2s,-webkit-transform .5s ease-out 0s;-webkit-transform: rotateY(0);transform: rotateY(0);-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+#manage-subscription .fuse-widget-front .h3{font-size: 16px;}
+#manage-subscription .mat-white-bg {background-color: #fff!important;color: rgba(0,0,0,.87)!important;}
+.mat-elevation-z2 {box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);}
+.mat-white-bg .secondary-text, .mat-white-bg.secondary-text {color: rgba(0,0,0,.54)!important;}
+.font-weight-500 {font-weight: 500;}

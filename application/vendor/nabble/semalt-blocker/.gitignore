@@ -1,0 +1,8 @@
+.idea/
+_*
+phpunit.xml
+composer.phar
+vendor/
+build/
+gh-md-toc
+debug/stats/

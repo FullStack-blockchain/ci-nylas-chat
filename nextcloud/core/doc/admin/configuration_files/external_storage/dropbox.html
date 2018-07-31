@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Dropbox &mdash; Nextcloud 13 Administration Manual 13 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '13',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Nextcloud 13 Administration Manual 13 documentation" href="../../contents.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1d2d44">
+
+  </head>
+  <body role="document">
+
+
+<div class="wrap container not-front">
+  <div class="content row">
+  <main class="main">
+    
+			<div class="row">
+				<div class="col-md-3">
+					<div class="sidebar">
+            <h1>Nextcloud 13 Administration Manual</h1>
+            
+            <div class="sidebar-search">
+              <form class="headersearch" action="../../search.html" method="get">
+                <input type="text" value="" name="q" id="q" class="form-control" /> 
+                <button  class="btn btn-default" type="submit" id="searchsubmit">Search</button>
+              </form>
+            </div>
+            
+							<div class="menu-support-container">
+								<ul id="menu-support" class="menu">
+									<ul>
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+									</ul>
+                  <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration_server/index.html">Server configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration_user/index.html">User management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">File sharing and management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../file_workflows/index.html">File workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration_database/index.html">Database configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../configuration_mimetypes/index.html">Mimetypes management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../maintenance/index.html">Maintenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../issues/index.html">Issues and troubleshooting</a></li>
+</ul>
+
+								</ul>
+							</div>
+					</div>
+				</div>
+        
+
+				<div class="col-md-9">
+					<div class="page-content">
+            
+						
+  <div class="section" id="dropbox">
+<h1>Dropbox<a class="headerlink" href="#dropbox" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">An app for Dropbox support is still in development for NC 13: <a class="reference external" href="https://github.com/icewind1991/files_external_dropbox">https://github.com/icewind1991/files_external_dropbox</a></p>
+</div>
+<p>While Dropbox supports the newer OAuth 2.0, Nextcloud uses OAuth 1.0, so you can
+safely ignore any references to OAuth 2.0 in the Dropbox configuration.</p>
+<p>Connecting Dropbox is a little more work because you have to create a Dropbox
+app. Log into the <a class="reference external" href="http://www.dropbox.com/developers">Dropbox Developers page</a>
+and click <strong>Create Your App</strong>:</p>
+<div class="figure">
+<img alt="Create your app." src="../../_images/dropbox.png" />
+</div>
+<p>Next, for <strong>Choose an API</strong> check <strong>Dropbox API</strong>.</p>
+<div class="figure">
+<img alt="Select Dropbox API." src="../../_images/dropbox-1.png" />
+</div>
+<p>The next option is choosing which folders to share, or to share everything in
+your Dropbox.</p>
+<div class="figure">
+<img alt="Folder selection." src="../../_images/dropbox-2.png" />
+</div>
+<p>Then enter your app name. This is anything you want it to be.</p>
+<div class="figure">
+<img alt="Name your app." src="../../_images/dropbox-3.png" />
+</div>
+<p>Then click the <strong>Create App</strong> button.</p>
+<p>Now you are on your app page, which displays its settings and more options. Do
+not click <strong>Development (Apply for production)</strong> because that is for apps
+that you want to release publicly.</p>
+<div class="figure">
+<img alt="Your app's page." src="../../_images/dropbox-4.png" />
+</div>
+<p>Click <strong>Enable additional users</strong> to allow multiple Nextcloud users to access
+your new Dropbox share.</p>
+<p>Now go to your Nextcloud Admin page. Your Nextcloud configuration requires only
+the local mount name, the <strong>App Key</strong> and the <strong>App Secret</strong>, and which users
+or groups have access to the share. Remember the little gear icon at the
+far right for additional options.</p>
+<p>After entering your local mount name, <strong>App Key</strong> and <strong>App Secret</strong>, click
+<strong>Grant access</strong>.</p>
+<div class="figure">
+<img alt="Nextcloud Dropbox configuration." src="../../_images/dropbox-6.png" />
+</div>
+<p>If you are not already logged into Dropbox, you will be prompted to login
+and authorize access. This happens only once, when you are first creating
+the new share. Click <strong>Allow</strong>, and you&#8217;re done.</p>
+<div class="figure">
+<img alt="Allow Dropbox access." src="../../_images/dropbox-5.png" />
+</div>
+<p>See <a class="reference internal" href="../external_storage_configuration_gui.html"><em>Configuring External Storage (GUI)</em></a> for additional mount
+options and information.</p>
+<p>See <a class="reference internal" href="auth_mechanisms.html"><em>External Storage authentication mechanisms</em></a> for more information on authentication schemes.</p>
+</div>
+
+
+            
+					</div>
+				</div>
+			</div>
+  </main>  
+  </div>
+</div>
+  </body>
+</html>

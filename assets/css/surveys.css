@@ -1,0 +1,40 @@
+#surveys-manage .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,#surveys-manage .nav-tabs>li.active>a:hover{color: #495057;background-color: transparent;border: none}
+#surveys-manage .nav-tabs .nav-item.active:not(.dropdown-toggle):after,#surveys-manage .nav-tabs .nav-item.show .nav-item:not(.dropdown-toggle):after{content: '';position: absolute;width: 100%;left: 0;right: 0;bottom: 0;height: 2px;background-color: #3C4252;}
+#surveys-manage .nav-tabs .nav-link{line-height: 25px;padding: 5px 15px;height: 4rem;}
+
+#survey_questions{ min-height: 200px}
+
+#survey_questions li .question:hover {
+    border: 2px dashed #EAEAEA;
+}
+
+.survey_add_more_box {
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.question.form-group {
+    padding: 25px;
+    background: #FDFDFD;
+    border: 1px solid #F1F1F1;
+}
+
+.question .required {
+    margin-top: 0;
+}
+
+.question_update {
+    margin-left: 15px;
+}
+
+.ui-sortable-handle{
+    margin-bottom: 1.6rem;
+}
+
+.question_update {
+    margin-left: 15px;
+    padding: 0;
+    height: auto;
+    width: auto;
+}

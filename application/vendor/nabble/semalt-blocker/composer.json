@@ -1,0 +1,31 @@
+{
+    "name": "nabble/semalt-blocker",
+    "type": "library",
+    "description": "Block referral spammers from visiting your site and ruining your stats",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joram van den Boezem",
+            "email": "hongaar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "true/punycode": "~2.0"
+    },
+    "require-dev": {
+        "jeremykendall/php-domain-parser": "~2.0",
+        "phpunit/phpunit": "~4",
+        "satooshi/php-coveralls": "dev-master",
+        "technosophos/PHPCompressor": "dev-master",
+        "guzzle/guzzle": "~3"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Nabble\\": "src/"
+        }
+    }
+}
